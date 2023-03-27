@@ -38,7 +38,7 @@ import Project from "../components/Project.astro";
 	<body class="overflow-x-hidden w-screen ">
 		<Navbar />
 		<main>
-			<div class=" w-full h-screen bg-[url('./public/cool_background.png')] flex  bg-center bg-cover justify-center items-center">
+			<div class=" w-full h-screen bg-[url('/mywebsite/cool_background.png')] flex  bg-center bg-cover justify-center items-center">
 				<h1 class=" text-5xl text-center font-bold text-white  font-sono "> Welcome to My Website!</h1>
 			</div>
 
@@ -77,7 +77,7 @@ import Project from "../components/Project.astro";
 				<h1 class="  text-4xl mt-4 text-cyan-700 font-sono font-bold">Expirience</h1>
 				<h2 class=" text-2xl font-bold font-ubu mb-6"> My expirience in proggraming</h2>
 				<div class="flex flex-wrap text-center justify-center gap-5">
-					<Project title="Stock market predicting program in python" pic="public/stock.png">
+					<Project title="Stock market predicting program in python" pic="/mywebsite/stock.png">
 						This program could scrape the data of a stock using yahoo finance, python requests, and BS4. The program could do basic static analysis of the stock and calculate proffesional terms that will help proffesionals understand the state of the stock.
 					</Project>
 					<a href="#"  class="   flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 ">
@@ -87,7 +87,7 @@ import Project from "../components/Project.astro";
 							<p class="mb-3 font-normal text-gray-700 ">I made 2 websites for clients as a freelance, because of premission issues i cannot share them.</p>
 						</div>
 					</a>
-					<Project title="AI generated world" pic="public/AI.png" >
+					<Project title="AI generated world" pic="/mywebsite/AI.png" >
 						This project was one of the hardest projects I made but one of the best. <br>
 						The program program had 3 main functionalities. It could generate a random creature, with its own diet, habitat, and looks. It could generate a picture of this creature using Midjourney AI and a wrapper. And it could generate a story between two creatures, they might be predatos, or symbotic.
 					</Project>
@@ -144,7 +144,7 @@ import Project from "../components/Project.astro";
 				
 				
 			}
-			xhr.open("GET", "/public/waves_options.txt", true);
+			xhr.open("GET", "//waves_options.txt", true);
 			xhr.send();
 			
 			const sections = document.querySelectorAll(".section");
