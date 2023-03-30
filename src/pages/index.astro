@@ -8,11 +8,7 @@ import Par from "../components/Par.astro";
 import Project from "../components/Project.astro";
 ---
 
-
-
-
 <!DOCTYPE html>
-
 <!-- 
 --rich-black: #091C26ff;
 --teal: #147F85ff;
@@ -22,201 +18,257 @@ import Project from "../components/Project.astro";
 --sandy-brown: #FAAB55ff;
 --midnight-green: #0E404Bff;
  -->
+<html lang="en" class="scroll-smooth w-screen scrollbar-hide">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>Maor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Sono&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="overflow-x-hidden w-screen">
+    <Navbar />
+    <main>
+      <div
+        class="w-full h-screen bg-[url('/mywebsite/cool_background.png')] flex bg-center bg-cover justify-center items-center"
+      >
+        <h1 class="text-5xl text-center font-bold text-white font-sono">
+          Welcome to My Website!
+        </h1>
+      </div>
 
+      <Section Id="about" Bg="#0E404Bff">
+        <h1 class="text-center text-4xl mt-4 text-cyan-700 font-bold font-sono">
+          About me
+        </h1>
+        <Par>
+          Hello! I'm Maor, a talented teenager who started programming at the
+          age of 8. Over the years, I've honed my skills in various programming
+          languages, including Python, HTML and CSS, JS, C#, C, C++, and reverse
+          engineering.
+        </Par>
+        <Par>
+          Currently, I'm embarking on a new journey as I start my degree in
+          Mathematics and Computer Science at Tel Aviv University, in the Beno
+          Arbel program. I'm excited to deepen my understanding of computer
+          science and explore new areas of interest within the field.
+        </Par>
+        <Par>
+          Through my portfolio website, I hope to showcase my programming
+          projects and demonstrate my technical abilities. If you're interested
+          in collaborating on a project or simply want to chat about
+          programming, feel free to reach out to me!
+        </Par>
+      </Section>
 
+      <Wave />
 
-<html lang="en" class=" scroll-smooth w-screen scrollbar-hide">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
-		<title>Maor </title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Sono&family=Ubuntu&display=swap" rel="stylesheet">	</head>
-	<body class="overflow-x-hidden w-screen ">
-		<Navbar />
-		<main>
-			<div class=" w-full h-screen bg-[url('/mywebsite/cool_background.png')] flex  bg-center bg-cover justify-center items-center">
-				<h1 class=" text-5xl text-center font-bold text-white  font-sono "> Welcome to My Website!</h1>
-			</div>
+      <Section Id="services" Bg="#FAAB55ff">
+        <h1 class="text-center text-4xl mt-4 text-cyan-700 font-bold">
+          My services
+        </h1>
+        <div id="serviceList" class="flex justify-center mt-5 gap-5 flex-wrap">
+          <Service title="Testing" Link="#">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
+            veritatis autem, vel harum sapiente quod repellat quis aspernatur
+            at.
+          </Service>
+          <Service title="Testing" Link="#">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
+            veritatis autem, vel harum sapiente quod repellat quis aspernatur
+            at.
+          </Service>
+          <Service title="Testing" Link="#">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
+            veritatis autem, vel harum sapiente quod repellat quis aspernatur
+            at.
+          </Service>
+          <Service title="Testing" Link="#">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
+            veritatis autem, vel harum sapiente quod repellat quis aspernatur
+            at.
+          </Service>
+          <Service title="Testing" Link="#">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
+            veritatis autem, vel harum sapiente quod repellat quis aspernatur
+            at.
+          </Service>
+          <Service title="Testing" Link="#">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
+            veritatis autem, vel harum sapiente quod repellat quis aspernatur
+            at.
+          </Service>
+        </div>
+      </Section>
 
-			<Section Id="about" Bg="#0E404Bff">
-				<h1 class=" text-center text-4xl mt-4 text-cyan-700 font-bold font-sono">About me</h1>
-				<Par >
-					Hello! I'm Maor, a talented teenager who started programming at the age of 8. Over the years, I've honed my skills in various programming languages, including Python, HTML and CSS, JS, C#, C, C++, and reverse engineering.
-				</Par>
-				<Par>
-					Currently, I'm embarking on a new journey as I start my degree in Mathematics and Computer Science at Tel Aviv University, in the Beno Arbel program. I'm excited to deepen my understanding of computer science and explore new areas of interest within the field.
-				</Par>
-				<Par>
-					Through my portfolio website, I hope to showcase my programming projects and demonstrate my technical abilities. If you're interested in collaborating on a project or simply want to chat about programming, feel free to reach out to me!
-				</Par>
-				
-				
-			</Section>
+      <Wave />
 
-			<Wave ></Wave>
+      <Section Id="expirience" Bg="#CD5379ff">
+        <h1 class="text-4xl mt-4 text-cyan-700 font-sono font-bold">
+          Expirience
+        </h1>
+        <h2 class="text-2xl font-bold font-ubu mb-6">
+          My expirience computer science
+        </h2>
+        <div class="flex flex-wrap text-center justify-center gap-5">
+          <Project
+            title="Website for client Sveta"
+            link="https://infermi.github.io/Sveta/"
+          />
+          <Project
+            title="Website for client DPgarden"
+            link="https://infermi.github.io/ar/"
+          />
+          <Project title="AI generated world" pic="/mywebsite/AI.png">
+            הפרויקט הזה היה אחד הפרויקטים הקשים שעשיתי אבל אחד מהם הטוב ביותר. <br
+            />
+            לתוכנית היו 3 פונקציות עיקריות. זה יכול ליצור יצור אקראי, עם תזונה, מקום
+            מחיה ומראה משלו. זה יכול ליצור תמונה של היצור הזה באמצעות Midjourney
+            AI . וזה יכול היה ליצור סיפור בין שני יצורים, הם עשויים להיות טורפים,
+            או סימבוטיים. <br />
+            והכל אוטומטי
+          </Project>
+          <Project
+            title="Stock market predicting program in python"
+            pic="/mywebsite/stock.png"
+          >
+            התוכנה יכלה להשיג מידע על מנייה דרך yahoo finance, ואז לחשב מידע
+            עליה שיעזור למקצוענים להסיק מסקנות על המניה
+          </Project>
+        </div>
+      </Section>
+    </main>
+    <!-- Accessibility Code for "infermi.github.io" -->
+    <script>
+      // @ts-ignore
+      window.interdeal = {
+        sitekey: "92ca7939ee5a307139679ef306bab528",
+        Position: "Left",
+        Menulang: "HE",
+        domains: {
+          js: "https://cdn.equalweb.com/",
+          acc: "https://access.equalweb.com/",
+        },
+        btnStyle: {
+          vPosition: ["80%", null],
+          scale: ["0.8", "0.8"],
+          color: {
+            main: "#1876c9",
+            second: "",
+          },
+          icon: {
+            type: 7,
+            shape: "semicircle",
+            outline: false,
+          },
+        },
+      };
+      (function (doc, head, body) {
+        var coreCall = doc.createElement("script");
+        // @ts-ignore
+        coreCall.src = interdeal.domains.js + "core/4.4.1/accessibility.js";
+        coreCall.defer = true;
+        coreCall.integrity =
+          "sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==";
+        coreCall.crossOrigin = "anonymous";
+        // @ts-ignore
+        coreCall.setAttribute("data-cfasync", true);
+        body ? body.appendChild(coreCall) : head.appendChild(coreCall);
+      })(document, document.head, document.body);
+    </script>
+    <script is:inline src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"
+    ></script>
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
+    ></script>
+    <script>
+      const xhr = new XMLHttpRequest();
+      const waves = document.querySelectorAll<HTMLElement>(".wave");
+      for (let i = 0; i < waves.length; i++) {
+        // @ts-ignore
 
-			<Section Id="services" Bg="#FAAB55ff">
-				<h1 class=" text-center text-4xl mt-4 text-cyan-700 font-bold">My services</h1>
-				<div id="serviceList" class=" flex justify-center  mt-5 gap-5 flex-wrap">
-					<Service title="Testing" Link="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam inventore eos a ullam, sunt labore iure nemo eius odit veritatis autem, vel harum sapiente quod repellat quis aspernatur at.</Service>
-					<Service title="Testing" Link="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam inventore eos a ullam, sunt labore iure nemo eius odit veritatis autem, vel harum sapiente quod repellat quis aspernatur at.</Service>
-					<Service title="Testing" Link="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam inventore eos a ullam, sunt labore iure nemo eius odit veritatis autem, vel harum sapiente quod repellat quis aspernatur at.</Service>
-					<Service title="Testing" Link="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam inventore eos a ullam, sunt labore iure nemo eius odit veritatis autem, vel harum sapiente quod repellat quis aspernatur at.</Service>
-					<Service title="Testing" Link="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam inventore eos a ullam, sunt labore iure nemo eius odit veritatis autem, vel harum sapiente quod repellat quis aspernatur at.</Service>
-					<Service title="Testing" Link="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam inventore eos a ullam, sunt labore iure nemo eius odit veritatis autem, vel harum sapiente quod repellat quis aspernatur at.</Service>
-				</div>
-			</Section>
+        // @ts-ignore
+        waves[i].parentElement.style.backgroundColor =
+          waves[i].parentElement.previousElementSibling.style.backgroundColor;
+        // @ts-ignore
+        waves[i].setAttribute(
+          "fill",
+          waves[i].parentElement.nextElementSibling.style.backgroundColor
+        );
+      }
 
-			<Wave></Wave>
+      xhr.responseType = "text";
+      xhr.onload = function () {
+        if (xhr.readyState === xhr.DONE) {
+          if (xhr.status === 200) {
+            window.waveOptions = xhr.responseText.split("\n");
 
-			<Section Id="expirience" Bg="#CD5379ff">
-				<h1 class="  text-4xl mt-4 text-cyan-700 font-sono font-bold">Expirience</h1>
-				<h2 class=" text-2xl font-bold font-ubu mb-6"> My expirience in proggraming</h2>
-				<div class="flex flex-wrap text-center justify-center gap-5">
-					<Project title="Stock market predicting program in python" pic="/mywebsite/stock.png">
-						This program could scrape the data of a stock using yahoo finance, python requests, and BS4. The program could do basic static analysis of the stock and calculate proffesional terms that will help proffesionals understand the state of the stock.
-					</Project>
-					<a href="#"  class="   flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 ">
-						
-						<div class="flex flex-col justify-between p-4 leading-normal">
-							<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">2 Websites as a frellancer for clients</h5>
-							<p class="mb-3 font-normal text-gray-700 ">I made 2 websites for clients as a freelance, because of premission issues i cannot share them.</p>
-						</div>
-					</a>
-					<Project title="AI generated world" pic="/mywebsite/AI.png" >
-						This project was one of the hardest projects I made but one of the best. <br>
-						The program program had 3 main functionalities. It could generate a random creature, with its own diet, habitat, and looks. It could generate a picture of this creature using Midjourney AI and a wrapper. And it could generate a story between two creatures, they might be predatos, or symbotic.
-					</Project>
-				</div>
-				
-			</Section>
+            // displays an array of all lines of the text file
+          }
+        }
+      };
+      xhr.onloadend = function () {
+        let upperBound = window.waveOptions.length;
 
+        for (let i = 0; i < waves.length; i++) {
+          // @ts-ignore
 
+          // @ts-ignore
+          waves[i].parentElement.style.backgroundColor =
+            waves[i].parentElement.previousElementSibling.style.backgroundColor;
+          // @ts-ignore
+          waves[i].setAttribute(
+            "fill",
+            waves[i].parentElement.nextElementSibling.style.backgroundColor
+          );
+          waves[i].setAttribute(
+            "d",
+            window.waveOptions[Math.floor(Math.random() * upperBound)]
+          );
+          waves[i].style.display = "";
+        }
+      };
+      xhr.open("GET", "/mywebsite/waves_options.txt", true);
+      xhr.send();
 
-			
+      const sections = document.querySelectorAll(".section");
+      const navLi = document.querySelectorAll("nav li a");
 
-		</main>
-		<!-- Accessibility Code for "infermi.github.io" -->
-		<script>
-			window.interdeal = {
-				"sitekey": "92ca7939ee5a307139679ef306bab528",
-				"Position": "Left",
-				"Menulang": "HE",
-				"domains": {
-					"js": "https://cdn.equalweb.com/",
-					"acc": "https://access.equalweb.com/"
-				},
-				"btnStyle": {
-					"vPosition": [
-						"80%",
-						null
-					],
-					"scale": [
-						"0.8",
-						"0.8"
-					],
-					"color": {
-						"main": "#1876c9",
-						"second": ""
-					},
-					"icon": {
-						"type": 7,
-						"shape": "semicircle",
-						"outline": false
-					}
-				}
-			};
-			(function(doc, head, body){
-				var coreCall             = doc.createElement('script');
-				coreCall.src             = interdeal.domains.js + 'core/4.4.1/accessibility.js';
-				coreCall.defer           = true;
-				coreCall.integrity       = 'sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==';
-				coreCall.crossOrigin     = 'anonymous';
-				coreCall.setAttribute('data-cfasync', true );
-				body? body.appendChild(coreCall) : head.appendChild(coreCall);
-			})(document, document.head, document.body);
-			</script>
-		<script is:inline src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
-		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-		<script>
-			
-			const xhr = new XMLHttpRequest();
-			const waves = document.querySelectorAll<HTMLElement>('.wave');
-			for (let i = 0; i < waves.length; i++) {
-					// @ts-ignore
-					console.log(waves[i].parentElement.previousElementSibling.style.backgroundColor)
-					// @ts-ignore
-					waves[i].parentElement.style.backgroundColor = waves[i].parentElement.previousElementSibling.style.backgroundColor
-					// @ts-ignore
-					waves[i].setAttribute('fill', waves[i].parentElement.nextElementSibling.style.backgroundColor )
-				}
-			
-			
-			xhr.responseType = "text";
-			xhr.onload = function() {
-				if (xhr.readyState === xhr.DONE) {
-					if (xhr.status === 200) {
-						window.waveOptions = xhr.responseText.split('\n');
-						
-						
-						// displays an array of all lines of the text file
-					};
-				};
-			};
-			xhr.onloadend = function(){
-				let upperBound = window.waveOptions.length;
-				
-				for (let i = 0; i < waves.length; i++) {
-					// @ts-ignore
-					console.log(waves[i].parentElement.previousElementSibling.style.backgroundColor)
-					// @ts-ignore
-					waves[i].parentElement.style.backgroundColor = waves[i].parentElement.previousElementSibling.style.backgroundColor
-					// @ts-ignore
-					waves[i].setAttribute('fill', waves[i].parentElement.nextElementSibling.style.backgroundColor )
-					waves[i].setAttribute('d',window.waveOptions[Math.floor(Math.random() * upperBound)])
-					waves[i].style.display = ""; 
-				}
+      window.onscroll = () => {
+        var current = "";
 
-				
-				
-			}
-			xhr.open("GET", "/mywebsite/waves_options.txt", true);
-			xhr.send();
-			
-			const sections = document.querySelectorAll(".section");
-			const navLi = document.querySelectorAll('nav li a');
-			
+        sections.forEach((section) => {
+          // @ts-ignore
+          const sectionTop = section.offsetTop;
 
-			
-			window.onscroll = () => {
-				var current = "";
-
-				sections.forEach((section) => {
-					// @ts-ignore
-					const sectionTop = section.offsetTop;
-					
-					if (pageYOffset >= sectionTop - 60) {
-						current = section.getAttribute("id"); }
-				});
-				navLi.forEach((li) => {
-					if (li.getAttribute("href") == "#" +  current) {
-						
-						li.classList.add("text-blue-700");
-					}else {
-						li.classList.remove("text-blue-700");
-					}
-				});
-			};
-
-			
-
-
-
-		</script>
-	</body>
-
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+          }
+        });
+        navLi.forEach((li) => {
+          if (li.getAttribute("href") == "#" + current) {
+            li.classList.add("text-blue-700");
+          } else {
+            li.classList.remove("text-blue-700");
+          }
+        });
+      };
+    </script>
+  </body>
 </html>
