@@ -126,14 +126,27 @@ import Project from "../components/Project.astro";
           My expirience computer science
         </h2>
         <div class="flex flex-wrap text-center justify-center gap-5">
-          <Project
-            title="Website for client Sveta"
-            link="https://infermi.github.io/Sveta/"
-          />
-          <Project
-            title="Website for client DPgarden"
-            link="https://infermi.github.io/ar/"
-          />
+          <a
+            href="https://infermi.github.io/Sveta/"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
+          >
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Website for client Sveta Kopman
+              </h5>
+            </div>
+          </a>
+          <a
+            href="https://infermi.github.io/ar/"
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
+          >
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Website for client DPgarden
+              </h5>
+            </div>
+          </a>
+
           <Project title="AI generated world" pic="/mywebsite/AI.png">
             הפרויקט הזה היה אחד הפרויקטים הקשים שעשיתי אבל אחד מהם הטוב ביותר. <br
             />
@@ -153,6 +166,19 @@ import Project from "../components/Project.astro";
         </div>
       </Section>
     </main>
+    <footer class="m-4 rounded-lg bg-slate-800 shadow-xl">
+      <div
+        class="container mx-auto w-full p-4 text-slate-200 md:flex md:items-center md:justify-between md:p-6"
+      >
+        <span>
+          עוצב על ידי <a
+            href="https://www.facebook.com/profile.php?id=100090172908011"
+            class="text-lg font-semibold text-[#FAAB55ff] hover:underline"
+            >מאור רחמיאל</a
+          >
+        </span>
+      </div>
+    </footer>
     <!-- Accessibility Code for "infermi.github.io" -->
     <script>
       // @ts-ignore
