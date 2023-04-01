@@ -5,7 +5,8 @@ module.exports = {
         fontFamily: {
             'lond': ['"Londrina Solid"'],
             'sono': ['"Sono"'],
-            'ubu': ['"Ubuntu"']
+            'ubu': ['"Ubuntu"'],
+            'bebas': '"Bebas Neue"'
         },
         extend: {
             backgroundImage: { 'profile': 'url("public/me.jpg")' },
