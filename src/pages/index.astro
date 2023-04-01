@@ -18,7 +18,7 @@ import Project from "../components/Project.astro";
 --sandy-brown: #FAAB55ff;
 --midnight-green: #0E404Bff;
  -->
-<html lang="en" class="scroll-smooth w-screen scrollbar-hide">
+<html lang="en" class="w-screen scroll-smooth scrollbar-hide">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -35,116 +35,90 @@ import Project from "../components/Project.astro";
       rel="stylesheet"
     />
   </head>
-  <body class="overflow-x-hidden w-screen">
+  <body class="w-screen overflow-x-hidden">
     <Navbar />
     <main>
       <div
-        class="w-full h-screen bg-[url('/mywebsite/cool_background.png')] flex bg-center bg-cover justify-center items-center"
+        class="flex h-screen w-full items-center justify-center bg-[url('/mywebsite/cool_background.png')] bg-cover bg-center"
       >
-        <h1 class="text-5xl text-center  text-slate-900 font-bebas">
-          Boost your small business <br />
-          with a website that <br />
-          <span class="font-bold text-blue-500">brings in customers</span>
+        <h1 class="xl:max-w-1/2 text-center font-bebas text-5xl text-slate-900">
+          תפתח את העסק שלך עם אתר <br />
+          <span class="text-6xl font-bold text-blue-500">שמושך לקוחות</span>
         </h1>
       </div>
 
-      <Section Id="about" Bg="#0E404Bff">
-        <h1 class=" text-4xl mt-4 text-cyan-700 font-bold font-sono text-center">
-          About me
+      <Section Id="about" Bg="#0E404Bff" dir="rtl">
+        <h1 class="mt-4 text-center font-sono text-4xl font-bold text-cyan-700">
+          קצת עליי
         </h1>
         <Par>
-          Hello! I'm Maor, a talented teenager who started programming at the
-          age of 8. Over the years, I've honed my skills in various programming
-          languages, including Python, HTML and CSS, JS, C#, C, C++, and reverse
-          engineering.
+          שלום! אני מאור, נער מוכשר שהתחיל לתכנת ב- גיל 8. במהלך השנים, שיפרתי
+          את כישורי בשפות תכנות שונות , כולל Python, HTML ו-CSS, JS, C#, C, C++
         </Par>
         <Par>
-          Currently, I'm embarking on a new journey as I start my degree in
-          Mathematics and Computer Science at Tel Aviv University, in the Beno
-          Arbel program. I'm excited to deepen my understanding of computer
-          science and explore new areas of interest within the field.
-        </Par>
-        <Par>
-          Through my portfolio website, I hope to showcase my programming
-          projects and demonstrate my technical abilities. If you're interested
-          in collaborating on a project or simply want to chat about
-          programming, feel free to reach out to me!
+          נכון לעכשיו, אני יוצא למסע חדש כשאני מתחיל את התואר שלי ב מתמטיקה
+          ומדעי המחשב באוניברסיטת תל אביב, בתוכנית בנו ארבל. אני נרגש להעמיק את
+          ההבנה שלי במדעי המחשב ולחקור תחומי עניין חדשים בתחום.
         </Par>
       </Section>
 
       <Wave />
 
       <Section Id="services" Bg="#FAAB55ff">
-        <h1 class="text-center text-4xl mt-4 text-cyan-700 font-bold">
-          My services
+        <h1 class="mt-4 text-center text-4xl font-bold text-cyan-700">
+          השירותים שאני מציע
         </h1>
-        <div id="serviceList" class="flex justify-center mt-5 gap-5 flex-wrap">
-          <Service title="Testing" Link="#">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
-            veritatis autem, vel harum sapiente quod repellat quis aspernatur
-            at.
-          </Service>
-          <Service title="Testing" Link="#">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
-            veritatis autem, vel harum sapiente quod repellat quis aspernatur
-            at.
-          </Service>
-          <Service title="Testing" Link="#">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
-            veritatis autem, vel harum sapiente quod repellat quis aspernatur
-            at.
-          </Service>
-          <Service title="Testing" Link="#">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
-            veritatis autem, vel harum sapiente quod repellat quis aspernatur
-            at.
-          </Service>
-          <Service title="Testing" Link="#">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
-            veritatis autem, vel harum sapiente quod repellat quis aspernatur
-            at.
-          </Service>
-          <Service title="Testing" Link="#">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            ipsam inventore eos a ullam, sunt labore iure nemo eius odit
-            veritatis autem, vel harum sapiente quod repellat quis aspernatur
-            at.
-          </Service>
-        </div>
+
+        <Par>
+          ברוכים הבאים לשירותי האתרים והדפי נחיתה שלי! אני מתמחה בבניית אתרי
+          אינטרנט ודפי נחיתה ייחודיים לעסקים קטנים ובינוניים.
+        </Par>
+        <Par>
+          אני מתמחה בפתרונות אתרי עסקים מותאמים אישית לכל לקוח, ובפרט לעסקים
+          קטנים ובינוניים. אני מציע פתרונות איכותיים ומותאמים לצרכי הלקוחות שלי,
+          ומפתח את האתר המתאים לצרכיו ולמטרות העסקיות שלו.
+        </Par>
+        <Par>
+          אני משתמש בטכנולוגיות המתקדמות ביותר כדי לספק את הפתרונות הטובים ביותר
+          והמתאימים לצרכי הלקוחות שלי. כמו כן, אני מציע שירותי תחזוקה ושדרוגים
+          כדי להבטיח שהאתר של הלקוח יישאר מעודכן ויעיל ככל שניתן.
+        </Par>
+        <Par>
+          אני נכנס לעומק הצרכים של כל לקוח כדי לספק לו את הפתרונות המתאימים
+          ביותר לעסק שלו. כל האתרים והדפים הנבנים על ידי עסק זה מתאימים למכשירים
+          ניידים ולכל התצוגות של מסכי מחשב, כדי להבטיח נוחות ויעילות בגלישה של
+          הלקוחות שלי.
+        </Par>
+        <h2 class="mt-4 text-center text-3xl text-cyan-600">
+          אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את דרכו
+        </h2>
       </Section>
 
       <Wave />
 
       <Section Id="expirience" Bg="#CD5379ff">
-        <h1 class="text-4xl mt-4 text-cyan-700 font-sono font-bold">
-          Expirience
+        <h1 class="mt-4 font-sono text-4xl font-bold text-cyan-700">
+          פרוייקטי עבר
         </h1>
-        <h2 class="text-2xl font-bold font-ubu mb-6">
-          My expirience computer science
-        </h2>
-        <div class="flex flex-wrap text-center justify-center gap-5">
+
+        <div class="flex flex-wrap justify-center gap-5 text-center">
           <a
             href="https://infermi.github.io/Sveta/"
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
+            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
           >
             <div class="flex flex-col justify-between p-4 leading-normal">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Website for client Sveta Kopman
+                אתר ללקוחה- סבטה קופמן
               </h5>
             </div>
           </a>
           <a
             href="https://infermi.github.io/ar/"
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
+            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
           >
             <div class="flex flex-col justify-between p-4 leading-normal">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                Website for client DPgarden
+                אתר ללקוח - DPgarden
               </h5>
             </div>
           </a>
