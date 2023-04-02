@@ -31,7 +31,7 @@ import Project from "../components/Project.astro";
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sono&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sono&family=Ubuntu&family=Londrina+Solid:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -51,15 +51,16 @@ import Project from "../components/Project.astro";
         <h1 class="mt-4 text-center font-sono text-4xl font-bold text-cyan-700">
           קצת עליי
         </h1>
-        <Par>
+        <p class="py-2 px-10 font-ubu text-xl text-white">
           שלום! אני מאור, נער מוכשר שהתחיל לתכנת ב- גיל 8. במהלך השנים, שיפרתי
           את כישורי בשפות תכנות שונות , כולל Python, HTML ו-CSS, JS, C#, C, C++
-        </Par>
-        <Par>
-          נכון לעכשיו, אני יוצא למסע חדש כשאני מתחיל את התואר שלי ב מתמטיקה
-          ומדעי המחשב באוניברסיטת תל אביב, בתוכנית בנו ארבל. אני נרגש להעמיק את
-          ההבנה שלי במדעי המחשב ולחקור תחומי עניין חדשים בתחום.
-        </Par>
+        </p>
+
+        <p class="py-2 px-10 font-ubu text-xl text-white">
+          נכון לעכשיו, אני יוצא למסע חדש כשאני מתחיל את התואר שלי במתמטיקה ומדעי
+          המחשב באוניברסיטת תל אביב, בתוכנית בנו ארבל. אני נרגש להעמיק את ההבנה
+          שלי במדעי המחשב ולחקור תחומי עניין חדשים בתחום.
+        </p>
       </Section>
 
       <Wave />
@@ -68,140 +69,168 @@ import Project from "../components/Project.astro";
         <h1 class="mt-4 text-center text-4xl font-bold text-cyan-700">
           השירותים שאני מציע
         </h1>
-
-        <Par>
+        <p class="py-2 px-10 font-ubu text-xl text-slate-800">
           ברוכים הבאים לשירותי האתרים והדפי נחיתה שלי! אני מתמחה בבניית אתרי
           אינטרנט ודפי נחיתה ייחודיים לעסקים קטנים ובינוניים.
-        </Par>
-        <Par>
+        </p>
+        <p class="py-2 px-10 font-ubu text-xl text-slate-800">
           אני מתמחה בפתרונות אתרי עסקים מותאמים אישית לכל לקוח, ובפרט לעסקים
           קטנים ובינוניים. אני מציע פתרונות איכותיים ומותאמים לצרכי הלקוחות שלי,
           ומפתח את האתר המתאים לצרכיו ולמטרות העסקיות שלו.
-        </Par>
-        <Par>
+        </p>
+
+        <p class="py-2 px-10 font-ubu text-xl text-slate-800">
           אני משתמש בטכנולוגיות המתקדמות ביותר כדי לספק את הפתרונות הטובים ביותר
           והמתאימים לצרכי הלקוחות שלי. כמו כן, אני מציע שירותי תחזוקה ושדרוגים
           כדי להבטיח שהאתר של הלקוח יישאר מעודכן ויעיל ככל שניתן.
-        </Par>
-        <Par>
+        </p>
+
+        <p class="py-2 px-10 font-ubu text-xl text-slate-800">
           אני נכנס לעומק הצרכים של כל לקוח כדי לספק לו את הפתרונות המתאימים
           ביותר לעסק שלו. כל האתרים והדפים הנבנים על ידי עסק זה מתאימים למכשירים
           ניידים ולכל התצוגות של מסכי מחשב, כדי להבטיח נוחות ויעילות בגלישה של
           הלקוחות שלי.
-        </Par>
-        <h2 class="mt-4 text-center text-3xl text-cyan-600">
-          אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את דרכו
-        </h2>
+        </p>
       </Section>
-
-      <Wave />
-
-      <Section Id="expirience" Bg="#CD5379ff">
-        <h1 class="mt-4 font-sono text-4xl font-bold text-cyan-700">
-          פרוייקטי עבר
-        </h1>
-
-        <div class="flex flex-wrap justify-center gap-5 text-center">
-          <a
-            href="https://infermi.github.io/Sveta/"
-            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
-          >
-            <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                אתר ללקוחה- סבטה קופמן
-              </h5>
-            </div>
-          </a>
-          <a
-            href="https://infermi.github.io/ar/"
-            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
-          >
-            <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                אתר ללקוח - DPgarden
-              </h5>
-            </div>
-          </a>
-
-          <Project title="AI generated world" pic="/mywebsite/AI.png">
-            הפרויקט הזה היה אחד הפרויקטים הקשים שעשיתי אבל אחד מהם הטוב ביותר. <br
-            />
-            לתוכנית היו 3 פונקציות עיקריות. זה יכול ליצור יצור אקראי, עם תזונה, מקום
-            מחיה ומראה משלו. זה יכול ליצור תמונה של היצור הזה באמצעות Midjourney
-            AI . וזה יכול היה ליצור סיפור בין שני יצורים, הם עשויים להיות טורפים,
-            או סימבוטיים. <br />
-            והכל אוטומטי
-          </Project>
-          <Project
-            title="Stock market predicting program in python"
-            pic="/mywebsite/stock.png"
-          >
-            התוכנה יכלה להשיג מידע על מנייה דרך yahoo finance, ואז לחשב מידע
-            עליה שיעזור למקצוענים להסיק מסקנות על המניה
-          </Project>
-        </div>
-      </Section>
+      <h2 class="mt-4 text-center text-3xl text-cyan-600">
+        אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את דרכו
+      </h2>
     </main>
-    <footer class="m-4 rounded-lg bg-slate-800 shadow-xl">
-      <div
-        class="container mx-auto w-full p-4 text-slate-200 md:flex md:items-center md:justify-between md:p-6"
-      >
-        <span>
-          עוצב על ידי <a
-            href="https://www.facebook.com/profile.php?id=100090172908011"
-            class="text-lg font-semibold text-[#FAAB55ff] hover:underline"
-            >מאור רחמיאל</a
-          >
-        </span>
+
+    <Wave />
+
+    <Section Id="expirience" Bg="#CD5379ff">
+      <h1 class="mt-4 font-sono text-4xl font-bold text-cyan-700">
+        פרוייקטי עבר
+      </h1>
+
+      <div class="flex flex-wrap justify-center gap-5 text-center">
+        <a
+          href="https://infermi.github.io/Sveta/"
+          class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
+        >
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              אתר ללקוחה- סבטה קופמן
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://infermi.github.io/ar/"
+          class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
+        >
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              אתר ללקוח - DPgarden
+            </h5>
+          </div>
+        </a>
+
+        <Project title="AI generated world" pic="/mywebsite/AI.png">
+          הפרויקט הזה היה אחד הפרויקטים הקשים שעשיתי אבל אחד מהם הטוב ביותר. <br
+          />
+          לתוכנית היו 3 פונקציות עיקריות. זה יכול ליצור יצור אקראי, עם תזונה, מקום
+          מחיה ומראה משלו. זה יכול ליצור תמונה של היצור הזה באמצעות Midjourney AI
+          . וזה יכול היה ליצור סיפור בין שני יצורים, הם עשויים להיות טורפים, או סימבוטיים.
+          <br />
+          והכל אוטומטי
+        </Project>
+        <Project
+          title="Stock market predicting program in python"
+          pic="/mywebsite/stock.png"
+        >
+          התוכנה יכלה להשיג מידע על מנייה דרך yahoo finance, ואז לחשב מידע עליה
+          שיעזור למקצוענים להסיק מסקנות על המניה
+        </Project>
       </div>
-    </footer>
-    <!-- Accessibility Code for "infermi.github.io" -->
-    <script>
+    </Section>
+  </body>
+  <footer class="m-4 rounded-lg bg-slate-800 shadow-xl">
+    <div
+      class="container mx-auto w-full p-4 text-slate-200 md:flex md:items-center md:justify-between md:p-6"
+    >
+      <span>
+        עוצב על ידי <a
+          href="https://www.facebook.com/profile.php?id=100090172908011"
+          class="text-lg font-semibold text-[#FAAB55ff] hover:underline"
+          >מאור רחמיאל</a
+        >
+      </span>
+    </div>
+  </footer>
+  <!-- Accessibility Code for "infermi.github.io" -->
+  <script>
+    // @ts-ignore
+    window.interdeal = {
+      sitekey: "92ca7939ee5a307139679ef306bab528",
+      Position: "Left",
+      Menulang: "HE",
+      domains: {
+        js: "https://cdn.equalweb.com/",
+        acc: "https://access.equalweb.com/",
+      },
+      btnStyle: {
+        vPosition: ["80%", null],
+        scale: ["0.8", "0.8"],
+        color: {
+          main: "#1876c9",
+          second: "",
+        },
+        icon: {
+          type: 7,
+          shape: "semicircle",
+          outline: false,
+        },
+      },
+    };
+    (function (doc, head, body) {
+      var coreCall = doc.createElement("script");
       // @ts-ignore
-      window.interdeal = {
-        sitekey: "92ca7939ee5a307139679ef306bab528",
-        Position: "Left",
-        Menulang: "HE",
-        domains: {
-          js: "https://cdn.equalweb.com/",
-          acc: "https://access.equalweb.com/",
-        },
-        btnStyle: {
-          vPosition: ["80%", null],
-          scale: ["0.8", "0.8"],
-          color: {
-            main: "#1876c9",
-            second: "",
-          },
-          icon: {
-            type: 7,
-            shape: "semicircle",
-            outline: false,
-          },
-        },
-      };
-      (function (doc, head, body) {
-        var coreCall = doc.createElement("script");
-        // @ts-ignore
-        coreCall.src = interdeal.domains.js + "core/4.4.1/accessibility.js";
-        coreCall.defer = true;
-        coreCall.integrity =
-          "sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==";
-        coreCall.crossOrigin = "anonymous";
-        // @ts-ignore
-        coreCall.setAttribute("data-cfasync", true);
-        body ? body.appendChild(coreCall) : head.appendChild(coreCall);
-      })(document, document.head, document.body);
-    </script>
-    <script is:inline src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"
-    ></script>
-    <script
-      is:inline
-      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
-    ></script>
-    <script>
-      const xhr = new XMLHttpRequest();
-      const waves = document.querySelectorAll<HTMLElement>(".wave");
+      coreCall.src = interdeal.domains.js + "core/4.4.1/accessibility.js";
+      coreCall.defer = true;
+      coreCall.integrity =
+        "sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==";
+      coreCall.crossOrigin = "anonymous";
+      // @ts-ignore
+      coreCall.setAttribute("data-cfasync", true);
+      body ? body.appendChild(coreCall) : head.appendChild(coreCall);
+    })(document, document.head, document.body);
+  </script>
+  <script is:inline src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"
+  ></script>
+  <script
+    is:inline
+    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
+  ></script>
+  <script>
+    const xhr = new XMLHttpRequest();
+    const waves = document.querySelectorAll<HTMLElement>(".wave");
+    for (let i = 0; i < waves.length; i++) {
+      // @ts-ignore
+
+      // @ts-ignore
+      waves[i].parentElement.style.backgroundColor =
+        waves[i].parentElement.previousElementSibling.style.backgroundColor;
+      // @ts-ignore
+      waves[i].setAttribute(
+        "fill",
+        waves[i].parentElement.nextElementSibling.style.backgroundColor
+      );
+    }
+
+    xhr.responseType = "text";
+    xhr.onload = function () {
+      if (xhr.readyState === xhr.DONE) {
+        if (xhr.status === 200) {
+          window.waveOptions = xhr.responseText.split("\n");
+
+          // displays an array of all lines of the text file
+        }
+      }
+    };
+    xhr.onloadend = function () {
+      let upperBound = window.waveOptions.length;
+
       for (let i = 0; i < waves.length; i++) {
         // @ts-ignore
 
@@ -213,64 +242,37 @@ import Project from "../components/Project.astro";
           "fill",
           waves[i].parentElement.nextElementSibling.style.backgroundColor
         );
+        waves[i].setAttribute(
+          "d",
+          window.waveOptions[Math.floor(Math.random() * upperBound)]
+        );
+        waves[i].style.display = "";
       }
+    };
+    xhr.open("GET", "/mywebsite/waves_options.txt", true);
+    xhr.send();
 
-      xhr.responseType = "text";
-      xhr.onload = function () {
-        if (xhr.readyState === xhr.DONE) {
-          if (xhr.status === 200) {
-            window.waveOptions = xhr.responseText.split("\n");
+    const sections = document.querySelectorAll(".section");
+    const navLi = document.querySelectorAll("nav li a");
 
-            // displays an array of all lines of the text file
-          }
+    window.onscroll = () => {
+      var current = "";
+
+      sections.forEach((section) => {
+        // @ts-ignore
+        const sectionTop = section.offsetTop;
+
+        if (pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute("id");
         }
-      };
-      xhr.onloadend = function () {
-        let upperBound = window.waveOptions.length;
-
-        for (let i = 0; i < waves.length; i++) {
-          // @ts-ignore
-
-          // @ts-ignore
-          waves[i].parentElement.style.backgroundColor =
-            waves[i].parentElement.previousElementSibling.style.backgroundColor;
-          // @ts-ignore
-          waves[i].setAttribute(
-            "fill",
-            waves[i].parentElement.nextElementSibling.style.backgroundColor
-          );
-          waves[i].setAttribute(
-            "d",
-            window.waveOptions[Math.floor(Math.random() * upperBound)]
-          );
-          waves[i].style.display = "";
+      });
+      navLi.forEach((li) => {
+        if (li.getAttribute("href") == "#" + current) {
+          li.classList.add("text-blue-700");
+        } else {
+          li.classList.remove("text-blue-700");
         }
-      };
-      xhr.open("GET", "/mywebsite/waves_options.txt", true);
-      xhr.send();
-
-      const sections = document.querySelectorAll(".section");
-      const navLi = document.querySelectorAll("nav li a");
-
-      window.onscroll = () => {
-        var current = "";
-
-        sections.forEach((section) => {
-          // @ts-ignore
-          const sectionTop = section.offsetTop;
-
-          if (pageYOffset >= sectionTop - 60) {
-            current = section.getAttribute("id");
-          }
-        });
-        navLi.forEach((li) => {
-          if (li.getAttribute("href") == "#" + current) {
-            li.classList.add("text-blue-700");
-          } else {
-            li.classList.remove("text-blue-700");
-          }
-        });
-      };
-    </script>
-  </body>
+      });
+    };
+  </script>
 </html>
