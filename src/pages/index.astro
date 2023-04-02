@@ -1,10 +1,8 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import Service from "../components/Service.astro";
 import Section from "../components/Section.astro";
 // @ts-ignore
 import Wave from "../components/Wave.astro";
-import Par from "../components/Par.astro";
 import Project from "../components/Project.astro";
 ---
 
@@ -31,19 +29,21 @@ import Project from "../components/Project.astro";
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Heebo:wght@400;900&family=Open+Sans&family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Heebo:wght@400;700;900&family=Open+Sans&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="w-screen overflow-x-hidden font-sans">
+  <body class="w-screen overflow-x-hidden font-varela">
     <Navbar />
     <main>
       <div
         class="flex h-screen w-full items-center justify-center bg-[url('/mywebsite/cool_background.png')] bg-cover bg-center"
       >
-        <h1 class="xl:max-w-1/2 text-center font-heebo text-5xl text-slate-900">
+        <h1
+          class="xl:max-w-1/2 text-center font-heebo text-5xl font-bold text-white"
+        >
           תפתח את העסק שלך עם אתר <br />
-          <span class="text-6xl font-bold text-blue-500">שמושך לקוחות</span>
+          <span class="text-6xl font-black text-blue-500">שמושך לקוחות</span>
         </h1>
       </div>
 
@@ -68,7 +68,9 @@ import Project from "../components/Project.astro";
       <Wave />
 
       <Section Id="services" Bg="#FAAB55ff">
-        <h1 class="mt-4 text-center text-4xl font-bold text-cyan-700">
+        <h1
+          class="mt-4 text-center font-fredo text-4xl font-bold text-cyan-700"
+        >
           השירותים שאני מציע
         </h1>
         <p class="py-2 px-10 font-varela text-xl text-slate-800">
@@ -93,10 +95,10 @@ import Project from "../components/Project.astro";
           ניידים ולכל התצוגות של מסכי מחשב, כדי להבטיח נוחות ויעילות בגלישה של
           הלקוחות שלי.
         </p>
+        <h2 class="mt-4 text-center text-3xl text-cyan-600">
+          אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את דרכו
+        </h2>
       </Section>
-      <h2 class="mt-4 text-center text-3xl text-cyan-600">
-        אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את דרכו
-      </h2>
     </main>
 
     <Wave />
@@ -111,8 +113,10 @@ import Project from "../components/Project.astro";
           href="https://infermi.github.io/Sveta/"
           class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
         >
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <div class="flex flex-col justify-between p-4">
+            <h5
+              class="mb-2 font-heebo text-2xl font-bold tracking-tight text-gray-900"
+            >
               אתר ללקוחה- סבטה קופמן
             </h5>
           </div>
@@ -121,8 +125,10 @@ import Project from "../components/Project.astro";
           href="https://infermi.github.io/ar/"
           class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
         >
-          <div class="flex flex-col justify-between p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <div class="flex flex-col justify-between p-4">
+            <h5
+              class="mb-2 font-heebo text-2xl font-bold tracking-tight text-gray-900"
+            >
               אתר ללקוח - DPgarden
             </h5>
           </div>
