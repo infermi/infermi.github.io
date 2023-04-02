@@ -1,7 +1,12 @@
 ---
-const {Id} = Astro.props;
-const {Bg} = Astro.props;
+const { Id } = Astro.props;
+const { Bg } = Astro.props;
 ---
-<div id={Id} style={`background-color: ${Bg} ;`} class= "text-center p-5 w-full scroll-mt-20 px-18 section" >
-    <slot />
-</div>
+
+<section
+  id={Id}
+  style={`background-color: ${Bg} ;`}
+  class="px-18 w-full scroll-mt-20 p-5 text-center"
+>
+  <slot />
+</section>

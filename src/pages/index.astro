@@ -16,7 +16,7 @@ import Project from "../components/Project.astro";
 --sandy-brown: #FAAB55ff;
 --midnight-green: #0E404Bff;
  -->
-<html lang="en" class="w-screen scroll-smooth scrollbar-hide">
+<html lang="en" class="w-screen scroll-smooth scrollbar-hide" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -259,7 +259,7 @@ import Project from "../components/Project.astro";
     xhr.open("GET", "/mywebsite/waves_options.txt", true);
     xhr.send();
 
-    const sections = document.querySelectorAll(".section");
+    const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll("nav li a");
 
     window.onscroll = () => {
