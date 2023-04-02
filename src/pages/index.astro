@@ -99,70 +99,72 @@ import Project from "../components/Project.astro";
           אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את דרכו
         </h2>
       </Section>
+      <Wave />
+
+      <Section Id="expirience" Bg="#CD5379ff">
+        <h1 class="mt-4 font-fredo text-4xl font-bold text-cyan-700">
+          פרוייקטי עבר
+        </h1>
+
+        <div class="flex flex-wrap justify-center gap-5 text-center">
+          <a
+            href="https://infermi.github.io/Sveta/"
+            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
+          >
+            <div class="flex flex-col justify-between p-4">
+              <h5
+                class="mb-2 font-heebo text-2xl font-bold tracking-tight text-gray-900"
+              >
+                אתר ללקוחה- סבטה קופמן
+              </h5>
+            </div>
+          </a>
+          <a
+            href="https://infermi.github.io/ar/"
+            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
+          >
+            <div class="flex flex-col justify-between p-4">
+              <h5
+                class="mb-2 font-heebo text-2xl font-bold tracking-tight text-gray-900"
+              >
+                אתר ללקוח - DPgarden
+              </h5>
+            </div>
+          </a>
+
+          <Project title="עולם שנוצר על ידי AI" pic="/mywebsite/AI.png">
+            הפרויקט הזה היה אחד הפרויקטים הקשים שעשיתי אבל אחד מהם הטוב ביותר. <br
+            />
+            לתוכנית היו 3 פונקציות עיקריות. זה יכול ליצור יצור אקראי, עם תזונה, מקום
+            מחיה ומראה משלו. זה יכול ליצור תמונה של היצור הזה באמצעות Midjourney
+            AI . וזה יכול היה ליצור סיפור בין שני יצורים, הם עשויים להיות טורפים,
+            או סימבוטיים.
+            <br />
+            והכל אוטומטי
+          </Project>
+          <Project title="תוכנה שחוזה את שוק ההון" pic="/mywebsite/stock.png">
+            התוכנה יכלה להשיג מידע על מנייה דרך yahoo finance, ואז לחשב מידע
+            עליה שיעזור למקצוענים להסיק מסקנות על המניה
+          </Project>
+        </div>
+      </Section>
     </main>
 
-    <Wave />
-
-    <Section Id="expirience" Bg="#CD5379ff">
-      <h1 class="mt-4 font-fredo text-4xl font-bold text-cyan-700">
-        פרוייקטי עבר
-      </h1>
-
-      <div class="flex flex-wrap justify-center gap-5 text-center">
-        <a
-          href="https://infermi.github.io/Sveta/"
-          class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
-        >
-          <div class="flex flex-col justify-between p-4">
-            <h5
-              class="mb-2 font-heebo text-2xl font-bold tracking-tight text-gray-900"
-            >
-              אתר ללקוחה- סבטה קופמן
-            </h5>
-          </div>
-        </a>
-        <a
-          href="https://infermi.github.io/ar/"
-          class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
-        >
-          <div class="flex flex-col justify-between p-4">
-            <h5
-              class="mb-2 font-heebo text-2xl font-bold tracking-tight text-gray-900"
-            >
-              אתר ללקוח - DPgarden
-            </h5>
-          </div>
-        </a>
-
-        <Project title="עולם שנוצר על ידי AI" pic="/mywebsite/AI.png">
-          הפרויקט הזה היה אחד הפרויקטים הקשים שעשיתי אבל אחד מהם הטוב ביותר. <br
-          />
-          לתוכנית היו 3 פונקציות עיקריות. זה יכול ליצור יצור אקראי, עם תזונה, מקום
-          מחיה ומראה משלו. זה יכול ליצור תמונה של היצור הזה באמצעות Midjourney AI
-          . וזה יכול היה ליצור סיפור בין שני יצורים, הם עשויים להיות טורפים, או סימבוטיים.
-          <br />
-          והכל אוטומטי
-        </Project>
-        <Project title="תוכנה שחוזה את שוק ההון" pic="/mywebsite/stock.png">
-          התוכנה יכלה להשיג מידע על מנייה דרך yahoo finance, ואז לחשב מידע עליה
-          שיעזור למקצוענים להסיק מסקנות על המניה
-        </Project>
+    <footer class="m-4 rounded-lg bg-slate-800 shadow-xl">
+      <div
+        class="container mx-auto w-full p-4 text-slate-200 md:flex md:items-center md:justify-between md:p-6"
+      >
+        <span>
+          עוצב על ידי <a
+            href="https://www.facebook.com/profile.php?id=100090172908011"
+            class="text-lg font-semibold text-[#FAAB55ff] hover:underline"
+            >מאור רחמיאל</a
+          >
+        </span>
       </div>
-    </Section>
+    </footer>
   </body>
-  <footer class="m-4 rounded-lg bg-slate-800 shadow-xl">
-    <div
-      class="container mx-auto w-full p-4 text-slate-200 md:flex md:items-center md:justify-between md:p-6"
-    >
-      <span>
-        עוצב על ידי <a
-          href="https://www.facebook.com/profile.php?id=100090172908011"
-          class="text-lg font-semibold text-[#FAAB55ff] hover:underline"
-          >מאור רחמיאל</a
-        >
-      </span>
-    </div>
-  </footer>
+
   <!-- Accessibility Code for "infermi.github.io" -->
   <script>
     // @ts-ignore
