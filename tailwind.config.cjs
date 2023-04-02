@@ -3,10 +3,11 @@ module.exports = {
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     theme: {
         fontFamily: {
-            'lond': ['"Londrina Solid"'],
-            'sono': ['"Sono"'],
-            'ubu': ['"Ubuntu"'],
-            'bebas': '"Bebas Neue"'
+            'sans': '"Open Sans"',
+            'heebo': '"Heebo"',
+            'varela': '"Varela Round"',
+            'fredo': '"Fredoka"'
+
         },
         extend: {
             backgroundImage: { 'profile': 'url("public/me.jpg")' },
