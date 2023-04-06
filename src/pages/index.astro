@@ -10,10 +10,10 @@ import Contact from "../components/Contact.astro";
 <!-- 
 --rich-black: #091C26ff;
 --teal: #147F85ff;
---fuchsia-rose: #CD5379ff;
+--fuchsia-rose: #CD5379ff; EXPIRIENCE
 --caput-mortuum: #522528ff;
 --rich-black-2: #03080Fff;  ABOUT
---sandy-brown: #FAAB55ff;
+--sandy-brown: #FAAB55ff; SERVICES
 --midnight-green: #0E404Bff;
  -->
 <html lang="en" class="w-screen scroll-smooth scrollbar-hide" dir="rtl">
@@ -32,6 +32,12 @@ import Contact from "../components/Contact.astro";
       href="https://fonts.googleapis.com/css2?family=Fredoka&family=Heebo:wght@400;700;900&family=Open+Sans&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body class="w-screen overflow-x-hidden font-varela">
     <Navbar />
@@ -48,6 +54,34 @@ import Contact from "../components/Contact.astro";
       </div>
 
       <Section Id="about" Bg="#0E404Bff" dir="rtl">
+        <div
+          class="mx-auto my-12 flex w-full justify-around gap-y-5 py-5 text-center text-xl font-medium text-gray-200 max-sm:flex-col xl:text-2xl"
+        >
+          <div>
+            <i
+              class="fa-solid fa-shekel-sign text-5xl transition-all hover:scale-110 lg:text-6xl"
+            ></i>
+            <p class="text-white">מחירי רצפה</p>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-user text-5xl transition-all hover:scale-110 lg:text-6xl"
+            ></i>
+            <p class="text-white">מתאים לעסקים קטנים ובינוניים</p>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-clock text-5xl transition-all hover:scale-110 lg:text-6xl"
+            ></i>
+            <p class="text-white">אתר מלא תוך 7 ימים</p>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-pen-nib text-5xl transition-all hover:scale-110 lg:text-6xl"
+            ></i>
+            <p class="text-white">תכנון ותיאום ציפיות לפרויקט</p>
+          </div>
+        </div>
         <h1
           class="mt-4 text-center font-fredo text-4xl font-bold text-cyan-700"
         >
