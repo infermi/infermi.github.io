@@ -1,9 +1,8 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import Section from "../components/Section.astro";
 import Wave from "../components/Wave.astro";
-import Project from "../components/Project.astro";
 import Contact from "../components/Contact.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <!DOCTYPE html>
@@ -20,7 +19,7 @@ import Contact from "../components/Contact.astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image" href="/me.jpg" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
       rel="stylesheet"
@@ -43,145 +42,149 @@ import Contact from "../components/Contact.astro";
     <Navbar />
     <main>
       <div
-        class="flex h-screen w-full items-center justify-center bg-[url('/mywebsite/cool_background.png')] bg-cover bg-center"
+        class="relative flex min-h-[75vh] w-full flex-col items-center justify-center text-center"
       >
-        <h1
-          class="xl:max-w-1/2 text-center font-heebo text-5xl font-bold text-gray-100"
-        >
-          תפתח את העסק שלך עם אתר <br />
-          <span class="text-6xl font-black text-blue-500">שמושך לקוחות</span>
-        </h1>
+        <div class="w-fit px-8 text-white">
+          <h1
+            class="text-center font-heebo text-3xl font-bold text-gray-100 md:whitespace-nowrap md:text-5xl lg:text-7xl xl:text-8xl"
+          >
+            תפתח את העסק שלך עם אתר <br />
+            <a
+              href="#contact"
+              class="relative cursor-pointer font-black text-blue-500 before:absolute before:bottom-2 before:-right-[10%] before:-left-[10%] before:h-2 before:w-[120%] before:origin-right before:scale-x-0 before:bg-blue-500 before:transition before:duration-150 before:ease-in hover:before:scale-100 xl:before:h-3"
+              >שמושך לקוחות</a
+            >
+          </h1>
+
+          <div
+            class="mt-7 flex flex-row justify-center gap-5 font-heebo text-base font-bold lg:text-3xl"
+          >
+            <a
+              data-ripple-light="true"
+              href="#about"
+              class="inline-block w-fit cursor-pointer rounded-md bg-blue-500 px-6 py-3 tracking-wider transition-all hover:scale-105 lg:px-9"
+            >
+              צור קשר
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="/mywebsite/background.png"
+          alt=""
+          class="absolute top-0 -z-10 h-full w-full object-cover object-center brightness-50"
+        />
       </div>
 
-      <Section Id="about" Bg="#0E404Bff" dir="rtl">
-        <div
-          class="mx-auto my-12 flex w-full justify-around gap-y-5 py-5 text-center text-xl font-medium text-gray-200 max-sm:flex-col xl:text-2xl"
-        >
-          <div>
-            <i
-              class="fa-solid fa-shekel-sign text-5xl transition-all hover:scale-110 lg:text-6xl"
-            ></i>
-            <p class="text-white">מחירי רצפה</p>
+      <section
+        id="about"
+        style="background-color: #0E404Bff ;"
+        class="px-18 w-full scroll-mt-20 p-5 text-center"
+      >
+        <div class="mx-auto max-w-screen-xl">
+          <div
+            class="mx-auto my-12 flex w-full justify-around gap-y-5 py-5 text-center text-xl font-medium text-gray-200 max-sm:flex-col xl:text-2xl"
+          >
+            <div>
+              <i
+                class="fa-solid fa-shekel-sign text-5xl transition-all hover:scale-110 lg:text-6xl"
+              ></i>
+              <p class="text-white">מחירי רצפה</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-user text-5xl transition-all hover:scale-110 lg:text-6xl"
+              ></i>
+              <p class="text-white">מתאים לעסקים קטנים ובינוניים</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-clock text-5xl transition-all hover:scale-110 lg:text-6xl"
+              ></i>
+              <p class="text-white">אתר מלא תוך 7 ימים</p>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-pen-nib text-5xl transition-all hover:scale-110 lg:text-6xl"
+              ></i>
+              <p class="text-white">תכנון ותיאום ציפיות לפרויקט</p>
+            </div>
           </div>
-          <div>
-            <i
-              class="fa-solid fa-user text-5xl transition-all hover:scale-110 lg:text-6xl"
-            ></i>
-            <p class="text-white">מתאים לעסקים קטנים ובינוניים</p>
-          </div>
-          <div>
-            <i
-              class="fa-solid fa-clock text-5xl transition-all hover:scale-110 lg:text-6xl"
-            ></i>
-            <p class="text-white">אתר מלא תוך 7 ימים</p>
-          </div>
-          <div>
-            <i
-              class="fa-solid fa-pen-nib text-5xl transition-all hover:scale-110 lg:text-6xl"
-            ></i>
-            <p class="text-white">תכנון ותיאום ציפיות לפרויקט</p>
-          </div>
+          <h1
+            class="mt-4 text-center font-heebo text-6xl font-bold text-cyan-700 xl:text-8xl"
+          >
+            קצת עליי
+          </h1>
+          <p class="py-2 px-10 font-varela text-lg text-white lg:text-2xl">
+            שמי מאור, אני רק בן 13 ואני בונה אתרים לבעלי עסקים קטנים ובינוניים
+            שרוצים אתר שממיר פניות רלונטיות. האתרים שאני בונה הם מעוצבים אישית
+            ורספונסיבים.
+          </p>
+          <p class="py-2 px-10 font-varela text-lg text-white lg:text-2xl">
+            נכון לעכשיו, אני יוצא למסע חדש כשאני מתחיל את התואר שלי במתמטיקה
+            ומדעי המחשב באוניברסיטת תל אביב, בתוכנית בנו ארבל. אני נרגש להעמיק
+            את ההבנה שלי במדעי המחשב ולחקור תחומי עניין חדשים בתחום.
+          </p>
         </div>
-        <h1
-          class="mt-4 text-center font-fredo text-4xl font-bold text-cyan-700"
-        >
-          קצת עליי
-        </h1>
-        <p class="py-2 px-10 font-varela text-xl text-white">
-          שלום! אני מאור, נער מוכשר שהתחיל לתכנת ב- גיל 8. במהלך השנים, שיפרתי
-          את כישורי בשפות תכנות שונות , כולל Python, HTML ו-CSS, JS, C#, C, C++
-        </p>
-
-        <p class="py-2 px-10 font-varela text-xl text-white">
-          נכון לעכשיו, אני יוצא למסע חדש כשאני מתחיל את התואר שלי במתמטיקה ומדעי
-          המחשב באוניברסיטת תל אביב, בתוכנית בנו ארבל. אני נרגש להעמיק את ההבנה
-          שלי במדעי המחשב ולחקור תחומי עניין חדשים בתחום.
-        </p>
-      </Section>
+      </section>
 
       <Wave />
 
-      <Section Id="services" Bg="#FAAB55ff">
-        <h1
-          class="mt-4 text-center font-fredo text-4xl font-bold text-cyan-700"
-        >
-          השירותים שאני מציע
-        </h1>
-        <p class="py-2 px-10 font-varela text-xl text-slate-800">
-          אני מתמחה בבניית אתרי אינטרנט ודפי נחיתה ייחודיים לעסקים קטנים
-          ובינוניים.
-        </p>
-        <p class="py-2 px-10 font-varela text-xl text-slate-800">
-          אני מתמחה בפתרונות אתרי עסקים מותאמים אישית לכל לקוח, ובפרט לעסקים
-          קטנים ובינוניים. אני מציע פתרונות איכותיים ומותאמים לצרכי הלקוחות שלי,
-          ומפתח את האתר המתאים לצרכיו ולמטרות העסקיות שלו.
-        </p>
+      <section
+        id="services"
+        style="background-color: #FAAB55ff ;"
+        class="px-18 w-full scroll-mt-20 p-5 text-center"
+      >
+        <div class="mx-auto max-w-screen-xl">
+          <h1
+            class="mt-4 text-center font-heebo text-6xl font-bold text-cyan-700 lg:text-8xl"
+          >
+            השירותים שאני מציע
+          </h1>
+          <div class="px-10 text-base text-slate-600 sm:text-lg lg:text-xl">
+            <p class="py-2 font-varela">
+              אני מתמחה בבניית אתרי אינטרנט ודפי נחיתה ייחודיים לעסקים קטנים
+              ובינוניים.
+            </p>
+            <p class="py-2 font-varela">
+              אני מתמחה בפתרונות אתרי עסקים מותאמים אישית לכל לקוח, ובפרט לעסקים
+              קטנים ובינוניים. אני מציע פתרונות איכותיים ומותאמים לצרכי הלקוחות
+              שלי, ומפתח את האתר המתאים לצרכיו ולמטרות העסקיות שלו.
+            </p>
 
-        <p class="py-2 px-10 font-varela text-xl text-slate-800">
-          אני משתמש בטכנולוגיות המתקדמות ביותר כדי לספק את הפתרונות הטובים ביותר
-          והמתאימים לצרכי הלקוחות שלי. כמו כן, אני מציע שירותי תחזוקה ושדרוגים
-          כדי להבטיח שהאתר של הלקוח יישאר מעודכן ויעיל ככל שניתן.
-        </p>
+            <p class="py-2 font-varela">
+              אני משתמש בטכנולוגיות המתקדמות ביותר כדי לספק את הפתרונות הטובים
+              ביותר והמתאימים לצרכי הלקוחות שלי. כמו כן, אני מציע שירותי תחזוקה
+              ושדרוגים כדי להבטיח שהאתר של הלקוח יישאר מעודכן ויעיל ככל שניתן.
+            </p>
 
-        <p class="py-2 px-10 font-varela text-xl text-slate-800">
-          אני נכנס לעומק הצרכים של כל לקוח כדי לספק לו את הפתרונות המתאימים
-          ביותר לעסק שלו. כל האתרים והדפים הנבנים על ידי עסק זה מתאימים למכשירים
-          ניידים ולכל התצוגות של מסכי מחשב, כדי להבטיח נוחות ויעילות בגלישה של
-          הלקוחות שלי.
-        </p>
-        <h2 class="mt-4 text-center text-3xl text-cyan-600">
-          אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את דרכו
-        </h2>
-      </Section>
+            <p class="py-2 font-varela">
+              אני נכנס לעומק הצרכים של כל לקוח כדי לספק לו את הפתרונות המתאימים
+              ביותר לעסק שלו. כל האתרים והדפים הנבנים על ידי עסק זה מתאימים
+              למכשירים ניידים ולכל התצוגות של מסכי מחשב, כדי להבטיח נוחות
+              ויעילות בגלישה של הלקוחות שלי.
+            </p>
+          </div><h2 class="mt-4 text-center text-3xl text-cyan-600">
+            אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את
+            דרכו
+          </h2>
+        </div>
+      </section>
       <Wave />
 
-      <Section Id="expirience" Bg="#CD5379ff">
-        <h1 class="mt-4 font-fredo text-4xl font-bold text-cyan-700">
-          פרוייקטי עבר
+      <section
+        id="expirience"
+        style="background-color: #CD5379ff ;"
+        class="px-18 w-full scroll-mt-20 space-y-5 p-5 text-center"
+      >
+        <h1
+          class="mt-4 font-heebo text-6xl font-bold text-cyan-700 xl:text-8xl"
+        >
+          תיק עבודות
         </h1>
 
-        <div class="flex flex-wrap justify-center gap-5 text-center">
-          <a
-            href="https://infermi.github.io/Sveta/"
-            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
-          >
-            <div class="flex flex-col justify-between p-4">
-              <h5
-                class="mb-2 font-heebo text-2xl font-bold tracking-tight text-gray-900"
-              >
-                אתר ללקוחה- סבטה קופמן
-              </h5>
-            </div>
-          </a>
-          <a
-            href="https://infermi.github.io/ar/"
-            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white shadow hover:bg-gray-100 md:max-w-xl md:flex-row"
-          >
-            <div class="flex flex-col justify-between p-4">
-              <h5
-                class="mb-2 font-heebo text-2xl font-bold tracking-tight text-gray-900"
-              >
-                אתר ללקוח - DPgarden
-              </h5>
-            </div>
-          </a>
-
-          <Project title="עולם שנוצר על ידי AI" pic="/mywebsite/AI.png">
-            הפרויקט הזה היה אחד הפרויקטים הקשים שעשיתי אבל אחד מהם הטוב ביותר. <br
-            />
-            לתוכנית היו 3 פונקציות עיקריות. זה יכול ליצור יצור אקראי, עם תזונה, מקום
-            מחיה ומראה משלו. זה יכול ליצור תמונה של היצור הזה באמצעות Midjourney
-            AI . וזה יכול היה ליצור סיפור בין שני יצורים, הם עשויים להיות טורפים,
-            או סימבוטיים.
-            <br />
-            והכל אוטומטי
-          </Project>
-          <Project title="תוכנה שחוזה את שוק ההון" pic="/mywebsite/stock.png">
-            התוכנה יכלה להשיג מידע על מנייה דרך yahoo finance, ואז לחשב מידע
-            עליה שיעזור למקצוענים להסיק מסקנות על המניה
-          </Project>
-        </div>
-      </Section>
+        <Projects />
+      </section>
       <Wave />
       <Contact />
     </main>
@@ -199,81 +202,61 @@ import Contact from "../components/Contact.astro";
         </span>
       </div>
     </footer>
-  </body>
 
-  <!-- Accessibility Code for "infermi.github.io" -->
-  <script>
-    // @ts-ignore
-    window.interdeal = {
-      sitekey: "92ca7939ee5a307139679ef306bab528",
-      Position: "Left",
-      Menulang: "HE",
-      domains: {
-        js: "https://cdn.equalweb.com/",
-        acc: "https://access.equalweb.com/",
-      },
-      btnStyle: {
-        vPosition: ["80%", null],
-        scale: ["0.8", "0.8"],
-        color: {
-          main: "#1876c9",
-          second: "",
+    <script
+      src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"
+    ></script>
+    <!-- Accessibility Code for "infermi.github.io" -->
+    <script>
+      // @ts-ignore
+      window.interdeal = {
+        sitekey: "92ca7939ee5a307139679ef306bab528",
+        Position: "Left",
+        Menulang: "HE",
+        domains: {
+          js: "https://cdn.equalweb.com/",
+          acc: "https://access.equalweb.com/",
         },
-        icon: {
-          type: 7,
-          shape: "semicircle",
-          outline: false,
+        btnStyle: {
+          vPosition: ["80%", null],
+          scale: ["0.8", "0.8"],
+          color: {
+            main: "#1876c9",
+            second: "",
+          },
+          icon: {
+            type: 7,
+            shape: "semicircle",
+            outline: false,
+          },
         },
-      },
-    };
-    (function (doc, head, body) {
-      var coreCall = doc.createElement("script");
-      // @ts-ignore
-      coreCall.src = interdeal.domains.js + "core/4.4.1/accessibility.js";
-      coreCall.defer = true;
-      coreCall.integrity =
-        "sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==";
-      coreCall.crossOrigin = "anonymous";
-      // @ts-ignore
-      coreCall.setAttribute("data-cfasync", true);
-      body ? body.appendChild(coreCall) : head.appendChild(coreCall);
-    })(document, document.head, document.body);
-  </script>
-  <script is:inline src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"
-  ></script>
-  <script
-    is:inline
-    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
-  ></script>
-  <script>
-    const xhr = new XMLHttpRequest();
-    const waves = document.querySelectorAll<HTMLElement>(".wave");
-    for (let i = 0; i < waves.length; i++) {
-      // @ts-ignore
+      };
+      (function (doc, head, body) {
+        var coreCall = doc.createElement("script");
+        // @ts-ignore
+        coreCall.src = interdeal.domains.js + "core/4.4.1/accessibility.js";
+        coreCall.defer = true;
+        coreCall.integrity =
+          "sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==";
+        coreCall.crossOrigin = "anonymous";
+        // @ts-ignore
+        coreCall.setAttribute("data-cfasync", true);
+        body ? body.appendChild(coreCall) : head.appendChild(coreCall);
+      })(document, document.head, document.body);
+    </script>
 
-      // @ts-ignore
-      waves[i].parentElement.style.backgroundColor =
-        waves[i].parentElement.previousElementSibling.style.backgroundColor;
-      // @ts-ignore
-      waves[i].setAttribute(
-        "fill",
-        waves[i].parentElement.nextElementSibling.style.backgroundColor
-      );
-    }
+    <script is:inline src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"
+    ></script>
 
-    xhr.responseType = "text";
-    xhr.onload = function () {
-      if (xhr.readyState === xhr.DONE) {
-        if (xhr.status === 200) {
-          window.waveOptions = xhr.responseText.split("\n");
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
+    ></script>
 
-          // displays an array of all lines of the text file
-        }
-      }
-    };
-    xhr.onloadend = function () {
-      let upperBound = window.waveOptions.length;
-
+    <!-- WAVES -->
+    <script>
+      const xhr = new XMLHttpRequest();
+      const waves = document.querySelectorAll<HTMLElement>(".wave");
       for (let i = 0; i < waves.length; i++) {
         // @ts-ignore
 
@@ -285,37 +268,64 @@ import Contact from "../components/Contact.astro";
           "fill",
           waves[i].parentElement.nextElementSibling.style.backgroundColor
         );
-        waves[i].setAttribute(
-          "d",
-          window.waveOptions[Math.floor(Math.random() * upperBound)]
-        );
-        waves[i].style.display = "";
       }
-    };
-    xhr.open("GET", "/mywebsite/waves_options.txt", true);
-    xhr.send();
 
-    const sections = document.querySelectorAll("section");
-    const navLi = document.querySelectorAll("nav li a");
+      xhr.responseType = "text";
+      xhr.onload = function () {
+        if (xhr.readyState === xhr.DONE) {
+          if (xhr.status === 200) {
+            window.waveOptions = xhr.responseText.split("\n");
 
-    window.onscroll = () => {
-      var current = "";
-
-      sections.forEach((section) => {
-        // @ts-ignore
-        const sectionTop = section.offsetTop;
-
-        if (pageYOffset >= sectionTop - 60) {
-          current = section.getAttribute("id");
+            // displays an array of all lines of the text file
+          }
         }
-      });
-      navLi.forEach((li) => {
-        if (li.getAttribute("href") == "#" + current) {
-          li.classList.add("text-blue-500");
-        } else {
-          li.classList.remove("text-blue-500");
+      };
+      xhr.onloadend = function () {
+        let upperBound = window.waveOptions.length;
+
+        for (let i = 0; i < waves.length; i++) {
+          // @ts-ignore
+
+          // @ts-ignore
+          waves[i].parentElement.style.backgroundColor =
+            waves[i].parentElement.previousElementSibling.style.backgroundColor;
+          // @ts-ignore
+          waves[i].setAttribute(
+            "fill",
+            waves[i].parentElement.nextElementSibling.style.backgroundColor
+          );
+          waves[i].setAttribute(
+            "d",
+            window.waveOptions[Math.floor(Math.random() * upperBound)]
+          );
+          waves[i].style.display = "";
         }
-      });
-    };
-  </script>
+      };
+      xhr.open("GET", "/waves_options.txt", true);
+      xhr.send();
+
+      const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll("nav li a");
+
+      window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+          // @ts-ignore
+          const sectionTop = section.offsetTop;
+
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+          }
+        });
+        navLi.forEach((li) => {
+          if (li.getAttribute("href") == "#" + current) {
+            li.classList.add("text-blue-500");
+          } else {
+            li.classList.remove("text-blue-500");
+          }
+        });
+      };
+    </script>
+  </body>
 </html>

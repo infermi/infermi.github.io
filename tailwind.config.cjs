@@ -10,6 +10,9 @@ module.exports = {
 
         },
         extend: {
+            screens: {
+                'xs': '380px'
+            },
             backgroundImage: { 'profile': 'url("public/me.jpg")' },
             colors: { 'pone': '#FDF0CCff', 'ptwo': '#005863ff', 'pthree': '#0A1C25ff', 'pfour': '#431C2Eff', 'pfive': '#FBAD53ff', 'psix': '#D3547Aff' }
         },

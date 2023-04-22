@@ -1,0 +1,49 @@
+---
+const projects = [
+  {
+    title: "DPgarden",
+    link: "https://infermi.github.io/ar/",
+    image: "dpgarden.jpg",
+  },
+
+  {
+    title: "פלג אליקו - כלבן",
+    link: "https://infermi.github.io/peleg/",
+    image: "peleg.jpg",
+  },
+];
+---
+
+<div class="mx-auto grid max-w-screen-xl grid-cols-2 gap-6 lg:grid-cols-3">
+  {
+    projects.map((site) => (
+      <div
+        class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg"
+        style="background-position: 50%;"
+        data-mdb-ripple="true"
+        data-mdb-ripple-color="dark"
+      >
+        <img
+          src={site.image}
+          class="aspect-square w-full object-cover align-middle transition duration-300 ease-linear"
+        />
+        <a href={site.link}>
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.3)"
+          >
+            <div class="flex h-full items-end justify-start">
+              <h5 class="m-6 text-lg font-bold text-white">{site.title}</h5>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div
+              class="mask absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+              style="background-color: rgba(253, 253, 253, 0.15)"
+            />
+          </div>
+        </a>
+      </div>
+    ))
+  }
+</div>
