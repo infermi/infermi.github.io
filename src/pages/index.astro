@@ -40,7 +40,20 @@ import Projects from "../components/Projects.astro";
   </head>
   <body class="w-screen overflow-x-hidden font-varela">
     <Navbar />
-    <main>
+    <div class="fixed top-20 z-[19] w-full bg-indigo-600 px-4 py-3 text-white">
+      <p class="text-center text-sm font-medium">
+        אני מחלק ל10 בעלי עסקית אתר <span
+          class="font-black underline underline-offset-2">בחינם</span
+        > &emsp;
+        <a
+          href="#contact"
+          class="inline-block rounded-lg bg-white px-2 py-1 text-indigo-400 hover:bg-gray-300 lg:px-3 lg:py-2"
+          >מעוניינם?</a
+        >
+      </p>
+    </div>
+
+    <main class="pt-28">
       <div
         class="relative flex min-h-[75vh] w-full flex-col items-center justify-center text-center"
       >
@@ -51,7 +64,7 @@ import Projects from "../components/Projects.astro";
             תפתח את העסק שלך עם אתר <br />
             <a
               href="#contact"
-              class="relative cursor-pointer font-black text-blue-500 before:absolute before:bottom-2 before:-right-[10%] before:-left-[10%] before:h-2 before:w-[120%] before:origin-right before:scale-x-0 before:bg-blue-500 before:transition before:duration-150 before:ease-in hover:before:scale-100 xl:before:h-3"
+              class="relative cursor-pointer font-black text-blue-500 before:absolute before:bottom-2 before:-right-[10%] before:-left-[10%] before:h-1 before:w-[120%] before:origin-right before:scale-x-0 before:bg-blue-500 before:transition before:duration-150 before:ease-in hover:before:scale-100 xl:before:h-3"
               >שמושך לקוחות</a
             >
           </h1>
