@@ -7,13 +7,34 @@ const projects = [
   },
 
   {
-    title: "פלג אליקו - כלבן",
+    title: "פלג אליקו",
     link: "https://infermi.github.io/peleg/",
     image: "peleg.jpg",
+  },
+  {
+    title: "אילנית קיצוני",
+    link: "https://infermi.github.io/ilanit/",
+    image: "ilanit.png",
+  },
+  {
+    title: "הודיה אהרון",
+    link: "https://infermi.github.io/hodaya/",
+    image: "https://infermi.github.io/hodaya/us.jpg",
+  },
+  {
+    title: "סקילין מרקטינג",
+    link: "https://infermi.github.io/SkylinMarketing/",
+    image:
+      "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   },
 ];
 ---
 
+<style>
+  .zoom:hover img {
+    transform: scale(1.1);
+  }
+</style>
 <div class="mx-auto grid max-w-screen-xl grid-cols-2 gap-6 lg:grid-cols-3">
   {
     projects.map((site) => (
@@ -25,7 +46,7 @@ const projects = [
       >
         <img
           src={site.image}
-          class="aspect-square w-full object-cover align-middle transition duration-300 ease-linear"
+          class="aspect-square w-full object-cover align-middle transition duration-300 ease-linear  "
         />
         <a href={site.link}>
           <div
