@@ -1,6 +1,5 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import Wave from "../components/Wave.astro";
 import Contact from "../components/Contact.astro";
 import Projects from "../components/Projects.astro";
 ---
@@ -38,7 +37,7 @@ import Projects from "../components/Projects.astro";
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-  <body class="w-screen overflow-x-hidden font-varela">
+  <body class="w-screen overflow-x-hidden font-varela text-white">
     <Navbar />
     <div class="fixed top-20 z-[19] w-full bg-indigo-600 px-4 py-3 text-white">
       <p class="text-center text-sm font-medium">
@@ -52,6 +51,7 @@ import Projects from "../components/Projects.astro";
     </div>
 
     <main class="pt-28">
+      <!-- HEADER -->
       <div
         class="relative flex min-h-[75vh] w-full flex-col items-center justify-center text-center"
       >
@@ -85,16 +85,17 @@ import Projects from "../components/Projects.astro";
         </div>
 
         <img
-          src="/mywebsite/background.png"
+          src="/background.png"
           alt=""
           class="absolute top-0 -z-10 h-full w-full object-cover object-center brightness-50"
         />
       </div>
+      <!--  -->
 
+      <!-- ABOUT -->
       <section
         id="about"
-        style="background-color: #0E404Bff ;"
-        class="px-18 w-full scroll-mt-20 p-5 text-center"
+        class="px-18 w-full scroll-mt-20 bg-bluegreen p-5 text-center"
       >
         <div class="mx-auto max-w-screen-xl">
           <div
@@ -125,34 +126,62 @@ import Projects from "../components/Projects.astro";
               <p class="text-white">עיצוב אישי שמושך פניות רלונטיות</p>
             </div>
           </div>
-          <h1
-            class="mt-4 text-center font-heebo text-6xl font-bold text-cyan-700 xl:text-8xl"
+          <div
+            class="mx-auto flex w-full max-w-screen-xl flex-grow flex-col items-stretch justify-center gap-5 px-3 text-center md:flex-1 md:flex-row md:px-10"
           >
-            קצת עליי
-          </h1>
-          <p class="py-2 px-10 font-varela text-lg text-white lg:text-2xl">
-            שמי מאור, אני רק בן 13 ואני בונה אתרים לבעלי עסקים קטנים ובינוניים
-            שרוצים אתר שממיר פניות רלונטיות. האתרים שאני בונה הם מעוצבים אישית
-            ורספונסיבים.
-          </p>
-          <p class="py-2 px-10 font-varela text-lg text-white lg:text-2xl">
-            נכון לעכשיו, אני יוצא למסע חדש כשאני מתחיל את התואר שלי במתמטיקה
-            ומדעי המחשב באוניברסיטת תל אביב, בתוכנית בנו ארבל. אני נרגש להעמיק
-            את ההבנה שלי במדעי המחשב ולחקור תחומי עניין חדשים בתחום.
-          </p>
+            <div class="order-1 w-full md:order-3 lg:w-7/12">
+              <img
+                src="/me.jpg"
+                alt=""
+                class="rounded-lg object-cover md:aspect-square"
+              />
+            </div>
+            <div class="order-2 w-full">
+              <h1
+                class="font-heebo text-4xl font-black lg:text-7xl xl:text-5xl"
+              >
+                קצת עליי
+              </h1>
+              <div
+                class="mx-auto mt-3 max-w-5xl text-base sm:text-lg md:text-xl xl:text-2xl"
+              >
+                <p class="">
+                  שמי מאור, אני רק בן 13 ואני בונה אתרים לבעלי עסקים קטנים
+                  ובינוניים שרוצים אתר שממיר פניות רלונטיות. האתרים שאני בונה הם
+                  מעוצבים אישית ורספונסיבים.
+                </p>
+                <p>
+                  נכון לעכשיו, אני יוצא למסע חדש כשאני מתחיל את התואר שלי
+                  במתמטיקה ומדעי המחשב באוניברסיטת תל אביב, בתוכנית בנו ארבל.
+                  אני נרגש להעמיק את ההבנה שלי במדעי המחשב ולחקור תחומי עניין
+                  חדשים בתחום.
+                </p>
+              </div>
+
+              <a
+                data-ripple-light="true"
+                href="#contact"
+                class="order-4 mx-auto block w-fit rounded-md bg-cta px-5 py-3 tracking-wider transition-all hover:scale-105"
+              >
+                קבע שיחת הכירות
+              </a>
+            </div>
+          </div>
         </div>
       </section>
+      <!--  -->
 
-      <Wave />
+      <div class="h-[400px] w-full bg-[url(waves/3.svg)] bg-cover bg-repeat">
+      </div>
 
+      <!-- SERVICES -->
       <section
         id="services"
-        style="background-color: #FAAB55ff ;"
-        class="px-18 w-full scroll-mt-20 p-5 text-center"
+        class="px-18 w-full scroll-mt-20 bg-apricot p-5 text-center"
       >
         <div class="mx-auto max-w-screen-xl">
           <h1
-            class="mt-4 text-center font-heebo text-6xl font-bold text-cyan-700 lg:text-8xl"
+            class="mt-4 text-center font-heebo text-6xl font-black text-white lg:text-8xl"
           >
             השירותים שאני מציע
           </h1>
@@ -181,23 +210,30 @@ import Projects from "../components/Projects.astro";
           </h2>
         </div>
       </section>
-      <Wave />
+      <!--  -->
 
+      <div class="h-[400px] w-full bg-[url(waves/2.svg)] bg-cover bg-repeat">
+      </div>
+
+      <!-- EXPIRIENCE -->
       <section
         id="expirience"
-        style="background-color: #CD5379ff ;"
-        class="px-18 w-full scroll-mt-20 space-y-5 p-5 text-center"
+        class="px-18 w-full scroll-mt-20 space-y-5 bg-wedgewood p-5 text-center"
       >
-        <h1
-          class="mt-4 font-heebo text-6xl font-bold text-[#091C26ff] xl:text-8xl"
-        >
+        <h1 class="mt-4 font-heebo text-6xl font-black text-white xl:text-8xl">
           תיק עבודות
         </h1>
 
         <Projects />
       </section>
-      <Wave />
+      <!--  -->
+
+      <div class="h-[400px] w-full bg-[url(waves/1.svg)] bg-cover bg-repeat">
+      </div>
+
+      <!-- CONTACT -->
       <Contact />
+      <!--  -->
     </main>
 
     <footer class="bg-slate-800 shadow-xl">
@@ -207,7 +243,7 @@ import Projects from "../components/Projects.astro";
         <span>
           עוצב על ידי <a
             href="https://www.facebook.com/profile.php?id=100090172908011"
-            class="text-lg font-semibold text-[#FAAB55ff] hover:underline"
+            class="text-lg font-semibold text-cta hover:underline"
             >מאור רחמיאל</a
           >
         </span>
@@ -261,57 +297,6 @@ import Projects from "../components/Projects.astro";
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
     ></script>
 
-    <!-- WAVES -->
-    <script>
-      const xhr = new XMLHttpRequest();
-      const waves = document.querySelectorAll<HTMLElement>(".wave");
-      for (let i = 0; i < waves.length; i++) {
-        // @ts-ignore
-
-        // @ts-ignore
-        waves[i].parentElement.style.backgroundColor =
-          waves[i].parentElement.previousElementSibling.style.backgroundColor;
-        // @ts-ignore
-        waves[i].setAttribute(
-          "fill",
-          waves[i].parentElement.nextElementSibling.style.backgroundColor
-        );
-      }
-
-      xhr.responseType = "text";
-      xhr.onload = function () {
-        if (xhr.readyState === xhr.DONE) {
-          if (xhr.status === 200) {
-            window.waveOptions = xhr.responseText.split("\n");
-
-            // displays an array of all lines of the text file
-          }
-        }
-      };
-      xhr.onloadend = function () {
-        let upperBound = window.waveOptions.length;
-
-        for (let i = 0; i < waves.length; i++) {
-          // @ts-ignore
-
-          // @ts-ignore
-          waves[i].parentElement.style.backgroundColor =
-            waves[i].parentElement.previousElementSibling.style.backgroundColor;
-          // @ts-ignore
-          waves[i].setAttribute(
-            "fill",
-            waves[i].parentElement.nextElementSibling.style.backgroundColor
-          );
-          waves[i].setAttribute(
-            "d",
-            window.waveOptions[Math.floor(Math.random() * upperBound)]
-          );
-          waves[i].style.display = "";
-        }
-      };
-      xhr.open("GET", "/mywebsite/waves_options.txt", true);
-      xhr.send();
-    </script>
     <!-- NAVBAR  -->
     <script>
       const sections = document.querySelectorAll("section");
