@@ -20,6 +20,25 @@ module.exports = {
                 easternblue: "#28A9AA",
                 cta: "#FAAB55ff"
             },
+
+            variants: {
+                animation: ["motion-safe"]
+            },
+            animation: {
+                fadeIn: "fadeIn 0.2s ease-in forwards ",
+                scrollDown: "scrollDown 0.4 ease-in"
+            },
+            keyframes: {
+                fadeIn: {
+                    "0%": { opacity: 0, transform: 'translate(0, 30px)' },
+                    "100%": { opacity: 1 }
+                },
+                scrollDown: {
+                    "0%": {},
+                    "50%": { transform: 'translate(0,30px)' },
+                    "100%": {}
+                }
+            }
         },
     },
     plugins: [require("tailwind-scrollbar-hide")],

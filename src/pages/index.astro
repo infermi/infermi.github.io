@@ -2,6 +2,8 @@
 import Navbar from "../components/Navbar.astro";
 import Contact from "../components/Contact.astro";
 import Projects from "../components/Projects.astro";
+import TextReview from "../components/TextReview.astro";
+import VideoReview from "../components/VideoReview.astro";
 ---
 
 <!DOCTYPE html>
@@ -37,7 +39,7 @@ import Projects from "../components/Projects.astro";
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-  <body class="w-screen overflow-x-hidden font-varela text-white">
+  <body class="w-screen overflow-x-hidden bg-bluegreen font-varela text-white">
     <Navbar />
     <div class="fixed top-20 z-[19] w-full bg-indigo-600 px-4 py-3 text-white">
       <p class="text-center text-sm font-medium">
@@ -92,39 +94,141 @@ import Projects from "../components/Projects.astro";
       </div>
       <!--  -->
 
+      <!-- FEATURES -->
+      <section
+        id="features"
+        class="px-18 w-full scroll-mt-20 bg-bluegreen p-5 text-center"
+      >
+        <div class="">
+          <div
+            class="mx-auto max-w-screen-xl items-center gap-16 py-8 px-4 lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+          >
+            <div
+              class="font-varela font-light text-gray-100 dark:text-gray-400 sm:text-lg"
+            >
+              <h2
+                class="mb-4 font-heebo text-4xl font-extrabold tracking-tight text-white dark:text-white lg:text-6xl"
+              >
+                אתר <span class="font-black underline">שמושך לקוחות</span>
+              </h2>
+              <p class="mb-4">
+                האתרים שאני בונה הם מעוצבים אישית מתאימים לכל מכשיר והכי חשוב, <span
+                  class="underline">מושכים לקוחות</span
+                ><br />
+              </p>
+            </div>
+            <div class="mt-8 grid grid-cols-2 gap-4">
+              <img
+                class="js-show-on-scroll w-full rounded-lg"
+                src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80&ar=9:12"
+                alt="office content 1"
+              />
+              <img
+                class="js-show-on-scroll mt-4 w-full rounded-lg lg:mt-10"
+                src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1262&q=80&ar=9:12"
+                alt="office content 2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-20 mb-32 max-w-screen-xl text-center">
+          <h2 class="mb-12 font-heebo text-4xl font-bold lg:text-5xl">
+            למה זה כל כך <u class="text-apricot">שווה?</u>
+          </h2>
+          <div class="grid md:grid-cols-3 lg:gap-x-12">
+            <div class="js-show-on-scroll mb-12 md:mb-0">
+              <div
+                class="mb-6 inline-block aspect-square w-fit rounded-full bg-blue-600 p-3 shadow-lg"
+              >
+                <i
+                  class="fa-truck-fast fa-solid aspect-square text-[2.5em] text-white"
+                ></i>
+              </div>
+              <h5 class="mb-4 text-lg font-bold">אתר מלא תוך 5 ימים</h5>
+              <p class="text-gray-200">
+                אני בונה אתרים במהירות ובאיכות כדי להבטיח נוחות עבור הלקוח
+              </p>
+            </div>
+
+            <div class="js-show-on-scroll mb-12 md:mb-0">
+              <div
+                class="mb-6 inline-block aspect-square w-fit rounded-full bg-blue-600 p-3 shadow-lg"
+              >
+                <i
+                  class="fa-wheelchair fa-solid aspect-square text-[2.5em] text-white"
+                ></i>
+              </div>
+              <h5 class="mb-4 text-lg font-bold">אתר נגיש</h5>
+              <p class="text-gray-200">
+                האתרים שאני בונה נגישים וקלים לשימוש כדי להבטיח חווית משתמש
+                מושלמת
+              </p>
+            </div>
+
+            <div class="js-show-on-scroll mb-12 md:mb-0">
+              <div
+                class="mb-6 inline-block aspect-square w-fit rounded-full bg-blue-600 p-3 shadow-lg"
+              >
+                <i
+                  class="fa-pen-nib fa-solid aspect-square text-[2.5em] text-white"
+                ></i>
+              </div>
+              <h5 class="mb-4 text-lg font-bold">מעוצב אישית</h5>
+              <p class="text-gray-200">
+                האתרים שאני בונה הם מעוצבים אישית עבור העסק שלך כדי להבטיח אתר
+                ממיר ומושך
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="overflow-hidden bg-gray-700 bg-opacity-25 sm:grid sm:grid-cols-2 sm:items-center"
+        >
+          <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+            <div class="mx-auto max-w-2xl text-center sm:text-right">
+              <h2 class="font-varela text-2xl font-bold text-white md:text-3xl">
+                התחילו להציג את העסק שלכם בעולם הדיגיטלי היום
+              </h2>
+
+              <p class="hidden text-gray-200 md:mt-4 md:block xl:text-lg">
+                אני מבין כמה חשוב להציג את העסק שלכם בצורה מקצועית ומרשימה בעולם
+                הדיגיטלי של היום. משימתי היא לספק לכם את האתר המושלם, אני משלב
+                את הידע והניסיון שלי בעיצוב ופיתוח אתרי אינטרנט כדי להבטיח
+                שתוכלו להציג את העסק שלכם בצורה מושלמת ובסגנון שמתאים לכם.
+              </p>
+
+              <div class="mt-4 md:mt-8">
+                <a
+                  class="inline-block rounded bg-cta px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring"
+                  href="#contact"
+                >
+                  צרו קשר
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <img
+            alt=""
+            src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            class="js-show-on-scroll h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end ltr:sm:rounded-tl-[30px] rtl:sm:rounded-tr-[30px] md:h-[calc(100%_-_4rem)] ltr:md:rounded-tl-[60px] rtl:md:rounded-tr-[60px]"
+          />
+        </div>
+      </section>
+      <!--  -->
+
+      <div
+        class="h-[400px] w-full bg-[url(/waves/3.svg)] bg-cover bg-repeat max-sm:h-[200px]"
+      >
+      </div>
+
       <!-- ABOUT -->
       <section
         id="about"
-        class="px-18 w-full scroll-mt-20 bg-bluegreen p-5 text-center"
+        class="px-18 js-show-on-scroll w-full scroll-mt-20 bg-apricot p-5 text-center"
       >
-        <div
-          class="mx-auto my-12 flex w-full justify-around gap-y-5 py-5 text-center text-xl font-medium text-gray-200 max-sm:flex-col xl:text-2xl"
-        >
-          <div>
-            <i
-              class="fa-solid fa-shekel-sign text-5xl transition-all hover:scale-110 lg:text-6xl"
-            ></i>
-            <p class="text-white">מחירי רצפה</p>
-          </div>
-          <div>
-            <i
-              class="fa-solid fa-user text-5xl transition-all hover:scale-110 lg:text-6xl"
-            ></i>
-            <p class="text-white">מתאים לעסקים קטנים ובינוניים</p>
-          </div>
-          <div>
-            <i
-              class="fa-solid fa-clock text-5xl transition-all hover:scale-110 lg:text-6xl"
-            ></i>
-            <p class="text-white">אתר מלא תוך 5 ימים</p>
-          </div>
-          <div>
-            <i
-              class="fa-solid fa-pen-nib text-5xl transition-all hover:scale-110 lg:text-6xl"
-            ></i>
-            <p class="text-white">עיצוב אישי שמושך פניות רלונטיות</p>
-          </div>
-        </div>
         <div class="mx-auto max-w-screen-xl">
           <div
             class="mx-auto flex w-full max-w-screen-xl flex-grow flex-col items-stretch justify-center gap-5 px-3 text-center md:flex-1 md:flex-row md:px-10"
@@ -140,7 +244,7 @@ import Projects from "../components/Projects.astro";
               <h1
                 class="font-heebo text-4xl font-black lg:text-7xl xl:text-5xl"
               >
-                קצת עליי
+                נעים להכיר
               </h1>
               <div
                 class="mx-auto mt-3 max-w-5xl text-base sm:text-lg md:text-xl xl:text-2xl"
@@ -171,63 +275,50 @@ import Projects from "../components/Projects.astro";
       <!--  -->
 
       <div
-        class="h-[400px] w-full bg-[url(/waves/3.svg)] bg-cover bg-repeat max-sm:h-[200px]"
-      >
-      </div>
-
-      <!-- SERVICES -->
-      <section
-        id="services"
-        class="px-18 w-full scroll-mt-20 bg-apricot p-5 text-center"
-      >
-        <div class="mx-auto max-w-screen-xl">
-          <h1
-            class="mt-4 text-center font-heebo text-6xl font-black text-white lg:text-8xl"
-          >
-            השירותים שאני מציע
-          </h1>
-          <div class="px-10 text-base text-slate-600 sm:text-lg lg:text-xl">
-            <p class="py-2 font-varela">
-              אני מתמחה בפתרונות אתרי עסקים מותאמים אישית לכל לקוח, ובפרט לעסקים
-              קטנים ובינוניים. אני מציע פתרונות איכותיים ומותאמים לצרכי הלקוחות
-              שלי, ומפתח את האתר המתאים לצרכיו ולמטרות העסקיות שלו.
-            </p>
-
-            <p class="py-2 font-varela">
-              אני משתמש בטכנולוגיות המתקדמות ביותר כדי לספק את הפתרונות הטובים
-              ביותר והמתאימים לצרכי הלקוחות שלי. כמו כן, אני מציע שירותי תחזוקה
-              ושדרוגים כדי להבטיח שהאתר של הלקוח יישאר מעודכן ויעיל ככל שניתן.
-            </p>
-
-            <p class="py-2 font-varela">
-              אני נכנס לעומק הצרכים של כל לקוח כדי לספק לו את הפתרונות המתאימים
-              ביותר לעסק שלו. כל האתרים והדפים שאני בונה מתאימים למכשירים ניידים
-              ולכל התצוגות של מסכי מחשב, כדי להבטיח נוחות ויעילות בגלישה של
-              הלקוחות שלי.
-            </p>
-          </div><h2 class="mt-4 text-center text-3xl text-cyan-600">
-            אני מאמין שאתר אינטרנט איכותי וייחודי הוא חיוני לכל עסק שמתחיל את
-            דרכו
-          </h2>
-        </div>
-      </section>
-      <!--  -->
-
-      <div
         class="h-[400px] w-full bg-[url(/waves/2.svg)] bg-cover bg-repeat max-sm:h-[200px]"
       >
       </div>
 
-      <!-- EXPIRIENCE -->
+      <!-- TESTIMONIALS -->
       <section
         id="expirience"
         class="px-18 w-full scroll-mt-20 space-y-5 bg-wedgewood p-5 text-center"
       >
         <h1 class="mt-4 font-heebo text-6xl font-black text-white xl:text-8xl">
-          תיק עבודות
+          לקוחות <span class="text-cta">מרוצים</span>
         </h1>
 
-        <Projects />
+        <section>
+          <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+            <div
+              class="[column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8"
+            >
+              <VideoReview
+                name="אילנית קיצוני-צילום באהבה"
+                pfp="https://infermi.github.io/ilanit/us.jpg"
+                video="ilanit.mp4"
+                website="https://infermi.github.io/ilanit"
+              />
+              <VideoReview
+                name="פלג אליקו-כלבן"
+                pfp="https://infermi.github.io/peleg/logo.png"
+                video="peleg.mp4"
+                website="https://infermi.github.io/peleg"
+              />
+              <TextReview
+                name="דניאל-DPgarden"
+                pfp="dpgarden.jpg"
+                website="https://infermi.github.io/ar"
+              >
+                אני ממליץ בחום על המתכנת מאור שבנה את האתר שלי בצורה מקצועית
+                מאוד. מאור הקשיב לכל בקשה שלי ודאג לכל הפרטים הקטנים כדי ליצור
+                לי את האתר המדהים שיש לי היום. כמו כן, מאור עדכן את האתר כל פעם
+                שרציתי לשנות משהו. הוא בחור מדהים ומקצועי ואני ממליץ בחום על
+                מאור לכל מי שמחפש בונה אתרים מקצועי
+              </TextReview>
+            </div>
+          </div>
+        </section>
       </section>
       <!--  -->
 
@@ -327,5 +418,29 @@ import Projects from "../components/Projects.astro";
         });
       };
     </script>
+
+    <!-- SHOWONSCROLL -->
+    <script>
+      const callback = function (entries: IntersectionObserverEntry[]) {
+        entries.forEach((entry: IntersectionObserverEntry) => {
+          console.log(entry);
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fadeIn");
+            observer.unobserve(entry.target);
+          } else {
+            entry.target.classList.remove("animate-fadeIn");
+          }
+        });
+      };
+      const observer = new IntersectionObserver(callback);
+
+      const targets = document.querySelectorAll(".js-show-on-scroll");
+      targets.forEach(function (target) {
+        target.classList.add("opacity-0");
+        observer.observe(target);
+      });
+    </script>
+    <!--  -->
   </body>
 </html>

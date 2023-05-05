@@ -1,0 +1,31 @@
+---
+export interface Props {
+  pfp: string;
+  name: string;
+  website: string;
+}
+
+const { pfp, name, website } = Astro.props;
+---
+
+<div class="js-show-on-scroll mb-8 sm:break-inside-avoid">
+  <blockquote class="rounded-xl bg-gray-50 p-6 shadow">
+    <p class="leading-relaxed text-gray-700">
+      <slot />
+    </p>
+  </blockquote>
+
+  <a class="mt-4 flex items-center gap-4" href={website}>
+    <img
+      alt="pfp"
+      loading="lazy"
+      src={pfp}
+      class="h-12 w-12 rounded-full object-cover"
+    />
+
+    <div class="text-sm">
+      <p class="font-medium">{name.split("-")[0]}</p>
+      <p class="mt-1">{name.split("-")[1]}</p>
+    </div>
+  </a>
+</div>
