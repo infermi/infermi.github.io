@@ -38,12 +38,18 @@ import VideoReview from "../components/VideoReview.astro";
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--  -->
   </head>
+
   <body class="w-screen overflow-x-hidden bg-bluegreen font-varela text-white">
     <Navbar />
     <div class="fixed top-20 z-[19] w-full bg-indigo-600 px-4 py-3 text-white">
       <p class="text-center text-sm font-medium">
-        דף נחיתה מעוצב אישית רק ב <span class="text-base underline">500₪</span> &emsp;
+        דף נחיתה מעוצב אישית רק ב <span class="text-base underline">1000₪</span>
+        &emsp;
         <a
           href="#contact"
           class="inline-block rounded-lg bg-white px-2 py-1 font-bold text-indigo-400 hover:bg-gray-300 lg:px-3 lg:py-2"
@@ -119,12 +125,14 @@ import VideoReview from "../components/VideoReview.astro";
             </div>
             <div class="mt-8 grid grid-cols-2 gap-4">
               <img
-                class="js-show-on-scroll w-full rounded-lg"
+                class="w-full rounded-lg"
+                data-aos="fade-up"
                 src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80&ar=9:12"
                 alt="office content 1"
               />
               <img
-                class="js-show-on-scroll mt-4 w-full rounded-lg lg:mt-10"
+                class="mt-4 w-full rounded-lg lg:mt-10"
+                data-aos="fade-up"
                 src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1262&q=80&ar=9:12"
                 alt="office content 2"
               />
@@ -137,7 +145,7 @@ import VideoReview from "../components/VideoReview.astro";
             למה זה כל כך <u class="text-apricot">שווה?</u>
           </h2>
           <div class="grid md:grid-cols-3 lg:gap-x-12">
-            <div class="js-show-on-scroll mb-12 md:mb-0">
+            <div class="mb-12 md:mb-0" data-aos="fade-up">
               <div
                 class="mb-6 inline-block aspect-square w-fit rounded-full bg-blue-600 p-3 shadow-lg"
               >
@@ -151,7 +159,7 @@ import VideoReview from "../components/VideoReview.astro";
               </p>
             </div>
 
-            <div class="js-show-on-scroll mb-12 md:mb-0">
+            <div class="mb-12 md:mb-0" data-aos="fade-up">
               <div
                 class="mb-6 inline-block aspect-square w-fit rounded-full bg-blue-600 p-3 shadow-lg"
               >
@@ -166,7 +174,7 @@ import VideoReview from "../components/VideoReview.astro";
               </p>
             </div>
 
-            <div class="js-show-on-scroll mb-12 md:mb-0">
+            <div class="mb-12 md:mb-0" data-aos="fade-up">
               <div
                 class="mb-6 inline-block aspect-square w-fit rounded-full bg-blue-600 p-3 shadow-lg"
               >
@@ -212,8 +220,9 @@ import VideoReview from "../components/VideoReview.astro";
 
           <img
             alt=""
+            data-aos="fade-up"
             src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-            class="js-show-on-scroll h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end ltr:sm:rounded-tl-[30px] rtl:sm:rounded-tr-[30px] md:h-[calc(100%_-_4rem)] ltr:md:rounded-tl-[60px] rtl:md:rounded-tr-[60px]"
+            class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end ltr:sm:rounded-tl-[30px] rtl:sm:rounded-tr-[30px] md:h-[calc(100%_-_4rem)] ltr:md:rounded-tl-[60px] rtl:md:rounded-tr-[60px]"
           />
         </div>
       </section>
@@ -227,7 +236,8 @@ import VideoReview from "../components/VideoReview.astro";
       <!-- ABOUT -->
       <section
         id="about"
-        class="px-18 js-show-on-scroll w-full scroll-mt-20 bg-apricot p-5 text-center"
+        data-aos="fade-up"
+        class="px-18 w-full scroll-mt-20 bg-apricot p-5 text-center"
       >
         <div class="mx-auto max-w-screen-xl">
           <div
@@ -281,7 +291,7 @@ import VideoReview from "../components/VideoReview.astro";
 
       <!-- TESTIMONIALS -->
       <section
-        id="expirience"
+        id="reviews"
         class="px-18 w-full scroll-mt-20 space-y-5 bg-wedgewood p-5 text-center"
       >
         <h1 class="mt-4 font-heebo text-6xl font-black text-white xl:text-8xl">
@@ -394,7 +404,7 @@ import VideoReview from "../components/VideoReview.astro";
     ></script>
 
     <!-- NAVBAR  -->
-    <script>
+    <!-- <script>
       const sections = document.querySelectorAll("section");
       const navLi = document.querySelectorAll("nav li a");
 
@@ -417,30 +427,11 @@ import VideoReview from "../components/VideoReview.astro";
           }
         });
       };
+    </script> -->
+
+    <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script is:inline>
+      AOS.init({ delay: 100, duration: 500, once: true });
     </script>
-
-    <!-- SHOWONSCROLL -->
-    <script>
-      const callback = function (entries: IntersectionObserverEntry[]) {
-        entries.forEach((entry: IntersectionObserverEntry) => {
-          console.log(entry);
-
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fadeIn");
-            observer.unobserve(entry.target);
-          } else {
-            entry.target.classList.remove("animate-fadeIn");
-          }
-        });
-      };
-      const observer = new IntersectionObserver(callback);
-
-      const targets = document.querySelectorAll(".js-show-on-scroll");
-      targets.forEach(function (target) {
-        target.classList.add("opacity-0");
-        observer.observe(target);
-      });
-    </script>
-    <!--  -->
   </body>
 </html>
